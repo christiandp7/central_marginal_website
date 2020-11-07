@@ -9,8 +9,8 @@ const glideOptions = {
 function HomeSlider() {
 
   useEffect(() => {
-    const glide = new Glide(glideOptions);
-    glide.mount({ Controls, Breacpoints})
+    const glide = new Glide('.glide',glideOptions);
+    glide.mount({ Controls, Breakpoints})
     return () => {
       glide.destroy();
     }
@@ -24,6 +24,10 @@ function HomeSlider() {
           <li className="glide__slide">1</li>
           <li className="glide__slide">2</li>
         </ul>
+      </div>
+      <div data-glide-el="controls">
+        <button data-glide-dir="<">Start</button>
+        <button data-glide-dir=">">End</button>
       </div>
     </div>
   )
