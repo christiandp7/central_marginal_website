@@ -25,9 +25,9 @@ function HomeSlider() {
           <li className="glide__slide">2</li>
         </ul>
       </div>
-      <div data-glide-el="controls">
-        <button data-glide-dir="<">Start</button>
-        <button data-glide-dir=">">End</button>
+      <div className="glide__arrows" data-glide-el="controls">
+        <button className="glide__arrow glide__arrow--prev" data-glide-dir="<">Prev</button>
+        <button className="glide__arrow glide__arrow--next" data-glide-dir=">">Next</button>
       </div>
     </div>
   )
