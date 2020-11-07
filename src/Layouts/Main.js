@@ -4,6 +4,7 @@ import {styled} from 'baseui';
 import {Grid, Cell} from 'baseui/layout-grid';
 
 import Sidebar from '../Components/Sidebar'
+import Content from '../Components/Content'
 
 const SidebarStyled = styled('div', ({$theme}) => ({
   backgroundColor: "#f60",
@@ -31,7 +32,7 @@ const Main = () => {
       </Cell>
       <Cell span={[10]}>
         <ContentStyled>
-          <h2>Main Content</h2>
+          <Content />
         </ContentStyled>
       </Cell>  
     </Grid>
