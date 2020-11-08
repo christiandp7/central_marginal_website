@@ -3,6 +3,9 @@ import {Provider as StyletronProvider} from 'styletron-react';
 import {LightTheme, BaseProvider, styled} from 'baseui';
 
 import './assets/scss/index.scss'
+// Slick Slider
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import Main from './Layouts/Main';
 
