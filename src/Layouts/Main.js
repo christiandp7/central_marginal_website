@@ -23,14 +23,14 @@ const Main = () => {
       gridGaps={0}
       gridGutters={0}
       gridMargins={0}
-      //gridMaxWidth={}
+      gridMaxWidth="none"
     >
-      <Cell span={[2]}>
+      <Cell span={[0 ,0, 2]}>
         <SidebarStyled>
           <Sidebar />
         </SidebarStyled>
       </Cell>
-      <Cell span={[10]}>
+      <Cell span={[4 ,8, 10]}>
         <ContentStyled>
           <Content />
         </ContentStyled>
