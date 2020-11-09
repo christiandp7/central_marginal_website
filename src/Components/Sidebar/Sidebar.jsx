@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <Block paddingTop="50px" maxHeight="100vh">
       <SideNav />
-      <Block maxWidth="100%" padding="1em 1.2em">
+      <Block maxWidth="100%" padding="1em 12px 1em 1.2em" marginTop="25px">
         <SideSlider />
       </Block>
     </Block>

@@ -25,22 +25,22 @@ function HomeSliderSlick() {
   return (
     <Slider {...settings}>
       <div>
-        <img src="https://picsum.photos/1000/400" alt="" />
+        <img src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt="" />
+        <img src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt="" />
+        <img src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt="" />
+        <img src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt="" />
+        <img src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt="" />
+        <img src="https://picsum.photos/1000/500" alt="" />
       </div>
     </Slider>
   );

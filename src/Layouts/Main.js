@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {  } from 'react'
 import {useStyletron} from 'baseui';
 import {styled} from 'baseui';
 import {Grid, Cell} from 'baseui/layout-grid';
@@ -13,6 +13,8 @@ const SidebarStyled = styled('div', ({$theme}) => ({
 const ContentStyled = styled('div', ({$theme}) => ({
   //backgroundColor: $theme.colors.backgroundAccent,
 }));
+
+
 
 const Main = () => {
   const [css, theme] = useStyletron();

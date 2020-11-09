@@ -19,6 +19,7 @@ const settings = {
   className: "sideSlider",
   autoplay: true,
   autoplaySpeed: 3000,
+  //asNavFor: 
   //nextArrow: '<button type="button" className="slick-next">Nrxt</button>'
 };
 
@@ -27,22 +28,22 @@ function SideSlider() {
   return (
     <Slider {...settings}>
       <div>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/400" alt="" />
+        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/400" alt="" />
+        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/400" alt="" />
+        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/400" alt="" />
+        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/400" alt="" />
+        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
       </div>
       <div>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/400" alt="" />
+        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
       </div>
     </Slider>
   )
