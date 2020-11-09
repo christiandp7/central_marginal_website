@@ -14,6 +14,7 @@ const settings = {
   accessibility: true,
   autoplay: true,
   autoplaySpeed: 3000,
+  className: "homeSlider"
   //nextArrow: '<button type="button" className="slick-next">Nrxt</button>'
 };
 
@@ -21,26 +22,25 @@ const settings = {
 function HomeSliderSlick() {
 
 
-  
   return (
     <Slider {...settings}>
       <div>
-        <img src="https://picsum.photos/1000/400" alt=""/>
+        <img src="https://picsum.photos/1000/400" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt=""/>
+        <img src="https://picsum.photos/1000/400" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt=""/>
+        <img src="https://picsum.photos/1000/400" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt=""/>
+        <img src="https://picsum.photos/1000/400" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt=""/>
+        <img src="https://picsum.photos/1000/400" alt="" />
       </div>
       <div>
-        <img src="https://picsum.photos/1000/400" alt=""/>
+        <img src="https://picsum.photos/1000/400" alt="" />
       </div>
     </Slider>
   );

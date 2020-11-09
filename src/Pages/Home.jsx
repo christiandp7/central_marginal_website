@@ -10,6 +10,8 @@ import { Block } from 'baseui/block'
 import { useStyletron } from 'baseui'
 
 
+import SliderTry from '../Components/SliderTry'
+
 
 function Home() {
   const [css, theme] = useStyletron();
@@ -24,7 +26,8 @@ function Home() {
     >
       <Block width="85%" display="flex" justifyContent="flex-end" alignItems="center">
         <Block display="block" maxWidth="700px" width="100%">
-          <HomeSliderSlick />
+          {/*<HomeSliderSlick />*/}
+          <SliderTry />
         </Block>
         
       </Block>

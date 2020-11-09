@@ -3,7 +3,7 @@ import {useStyletron} from 'baseui';
 import {styled} from 'baseui';
 import {Grid, Cell} from 'baseui/layout-grid';
 
-import Sidebar from '../Components/Sidebar'
+import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
 
 const SidebarStyled = styled('div', ({$theme}) => ({
