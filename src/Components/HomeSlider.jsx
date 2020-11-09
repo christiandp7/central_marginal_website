@@ -26,13 +26,13 @@ function HomeSlider() {
       <div className="glide__track" data-glide-el="track">
         <ul className="glide__slides">
           <li className="glide__slide">
-            <img src="https://picsum.photos/800/600" alt=""/>
+            <img src="https://picsum.photos/1000/400" alt=""/>
           </li>
           <li className="glide__slide">
-            <img src="https://picsum.photos/800/600" alt=""/>
+            <img src="https://picsum.photos/1000/400" alt=""/>
           </li>
           <li className="glide__slide">
-            <img src="https://picsum.photos/800/600" alt=""/>
+            <img src="https://picsum.photos/1000/400" alt=""/>
           </li>
         </ul>
       </div>

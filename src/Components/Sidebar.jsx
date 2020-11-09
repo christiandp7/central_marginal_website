@@ -1,11 +1,12 @@
 import React from 'react'
 import SideNav from './SideNav'
+import { Block } from 'baseui/block'
 
 function Sidebar() {
   return (
-    <div>
+    <Block marginTop="50px">
       <SideNav />
-    </div>
+    </Block>
   )
 }
 

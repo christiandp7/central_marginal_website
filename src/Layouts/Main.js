@@ -7,11 +7,11 @@ import Sidebar from '../Components/Sidebar'
 import Content from '../Components/Content'
 
 const SidebarStyled = styled('div', ({$theme}) => ({
-  backgroundColor: "#f60",
+  //backgroundColor: "#f60",
 }));
 
 const ContentStyled = styled('div', ({$theme}) => ({
-  backgroundColor: $theme.colors.backgroundAccent,
+  //backgroundColor: $theme.colors.backgroundAccent,
 }));
 
 const Main = () => {
