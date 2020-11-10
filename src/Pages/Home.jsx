@@ -39,7 +39,7 @@ export class Home extends Component {
         flexWrap="wrap"*/
       >
         <Block width="85%" display="flex" justifyContent="flex-end" alignItems="center">
-          <Block display="block" maxWidth="700px" width="100%">
+          <Block display="block" maxWidth="660px" width="100%">
             {/*<HomeSliderSlick />*/}
             <HomeSliderSlick />
           </Block>
