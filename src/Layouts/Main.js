@@ -2,9 +2,12 @@ import React, {  } from 'react'
 import {useStyletron} from 'baseui';
 import {styled} from 'baseui';
 import {Grid, Cell} from 'baseui/layout-grid';
+import { Block } from 'baseui/block'
+
 
 import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
+import Footer from '../Components/Footer'
 
 const SidebarStyled = styled('div', ({$theme}) => ({
   //backgroundColor: "#f60",
@@ -20,6 +23,7 @@ const Main = () => {
   const [css, theme] = useStyletron();
   
   return (
+    <React.Fragment>
     <Grid
       //gridColumns={}
       gridGaps={0}
@@ -38,6 +42,8 @@ const Main = () => {
         </ContentStyled>
       </Cell>  
     </Grid>
+    <Footer />
+    </React.Fragment>
   )
 }
 

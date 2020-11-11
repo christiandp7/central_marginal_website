@@ -7,9 +7,6 @@ import { useStyletron } from 'styletron-react';
 const settings = {
   dots: false,
   infinite: true,
-  //adaptiveHeight: true,
-  //variableWidth: true,
-  //speed: 500,
   vertical: true,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -27,22 +24,23 @@ function SideSlider() {
   const [css, theme] = useStyletron();
 
   const figStyles = css({margin:'0', outline: '0'});
+  const imgStyles = css({ maxWidth: '100%'})
   return (
     <Slider {...settings} ref={slider => setSlider2(slider)} asNavFor={slider1}>
       <figure className={figStyles}>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
+        <img className={imgStyles} src="https://picsum.photos/1000/500" alt="" />
       </figure>
       <figure className={figStyles}>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
+        <img className={imgStyles} src="https://picsum.photos/1000/500" alt="" />
       </figure>
       <figure className={figStyles}>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
+        <img className={imgStyles} src="https://picsum.photos/1000/500" alt="" />
       </figure>
       <figure className={figStyles}>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
+        <img className={imgStyles} src="https://picsum.photos/1000/500" alt="" />
       </figure>
       <figure className={figStyles}>
-        <img className={css({width: '100%'})} src="https://picsum.photos/1000/500" alt="" />
+        <img className={imgStyles} src="https://picsum.photos/1000/500" alt="" />
       </figure>
     </Slider>
   )

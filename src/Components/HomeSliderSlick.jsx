@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import { ChevronLeft, ChevronRight } from "baseui/icon";
 import { SliderContext } from '../Context/SliderContext'
 import { useStyletron } from 'baseui'
+import { Paragraph2 } from 'baseui/typography'
 
 const nextArrow = () => (<button type="button" className="slick-next">Nrxt</button>)
 
@@ -32,27 +33,39 @@ function HomeSliderSlick() {
     <Slider {...settings} ref={slider => setSlider1(slider)} asNavFor={slider2}>
       <figure className={figStyles}>
         <img src="https://picsum.photos/1000/400" alt="Trulli"  />
-        <figcaption className={figCapStyles}>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-      </figure>
-      <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/450" alt="Trulli"  />
-        <figcaption className={figCapStyles}>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-      </figure>
-      <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
-        <figcaption className={figCapStyles}>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        <figcaption className={figCapStyles}>
+          <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
+        </figcaption>
       </figure>
       <figure className={figStyles}>
         <img src="https://picsum.photos/1000/400" alt="Trulli"  />
-        <figcaption className={figCapStyles}>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        <figcaption className={figCapStyles}>
+          <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
+        </figcaption>
       </figure>
       <figure className={figStyles}>
         <img src="https://picsum.photos/1000/400" alt="Trulli"  />
-        <figcaption className={figCapStyles}>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        <figcaption className={figCapStyles}>
+          <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
+        </figcaption>
       </figure>
       <figure className={figStyles}>
         <img src="https://picsum.photos/1000/400" alt="Trulli"  />
-        <figcaption className={figCapStyles}>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+        <figcaption className={figCapStyles}>
+          <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
+        </figcaption>
+      </figure>
+      <figure className={figStyles}>
+        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <figcaption className={figCapStyles}>
+          <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
+        </figcaption>
+      </figure>
+      <figure className={figStyles}>
+        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <figcaption className={figCapStyles}>
+          <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
+        </figcaption>
       </figure>
       {/*<div>
         <img src="https://picsum.photos/1000/400" alt="" />
