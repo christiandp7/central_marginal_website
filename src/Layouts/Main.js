@@ -4,6 +4,7 @@ import {styled} from 'baseui';
 import {Grid, Cell} from 'baseui/layout-grid';
 import { Block } from 'baseui/block'
 
+import { BrowserRouter as Router } from "react-router-dom"
 
 import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
@@ -18,32 +19,31 @@ const ContentStyled = styled('div', ({$theme}) => ({
 }));
 
 
-
 const Main = () => {
   const [css, theme] = useStyletron();
   
   return (
-    <React.Fragment>
-    <Grid
-      //gridColumns={}
-      gridGaps={0}
-      gridGutters={0}
-      gridMargins={0}
-      gridMaxWidth="none"
-    >
-      <Cell span={[0 ,0, 2]}>
-        <SidebarStyled>
-          <Sidebar />
-        </SidebarStyled>
-      </Cell>
-      <Cell span={[4 ,8, 10]}>
-        <ContentStyled>
-          <Content />
-        </ContentStyled>
-      </Cell>  
-    </Grid>
-    <Footer />
-    </React.Fragment>
+    <Router>
+      <Grid
+        //gridColumns={}
+        gridGaps={0}
+        gridGutters={0}
+        gridMargins={0}
+        gridMaxWidth="none"
+      >
+        <Cell span={[0 ,0, 2]}>
+          <SidebarStyled>
+            <Sidebar />
+          </SidebarStyled>
+        </Cell>
+        <Cell span={[4 ,8, 10]}>
+          <ContentStyled>
+            <Content />
+          </ContentStyled>
+        </Cell>  
+      </Grid>
+      <Footer />
+    </Router>
   )
 }
 

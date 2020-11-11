@@ -17,6 +17,7 @@ const settings = {
   accessibility: true,
   autoplay: true,
   autoplaySpeed: 3000,
+  arrows: false,
   className: "homeSlider"
   //nextArrow: '<button type="button" className="slick-next">Nrxt</button>'
 };

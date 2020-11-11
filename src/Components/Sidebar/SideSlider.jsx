@@ -14,6 +14,7 @@ const settings = {
   vertical: true,
   verticalSwiping: true,
   swipeToSlide: true,
+  arrows: false,
   className: "sideSlider",
   //asNavFor: 
   //nextArrow: '<button type="button" className="slick-next">Nrxt</button>'

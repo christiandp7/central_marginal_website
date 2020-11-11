@@ -1,5 +1,7 @@
 import React from 'react'
 import { Navigation } from "baseui/side-navigation";
+import { withRouter } from "react-router";
+import { useLocation, useHistory } from "react-router-dom"
 
 const navItems = [
   { title: 'podcast', itemId: '/podcast' },
@@ -9,9 +11,18 @@ const navItems = [
 ]
 
 function SideNav() {
+  let location = useLocation();
+  let history = useHistory();
   return (
+    <React.Fragment>
     <Navigation 
       items={navItems}
+      activeItemId={location.pathname}
+      onChange={({event, item}) => {
+        // prevent page reload
+        event.preventDefault();
+        history.push(item.itemId);
+      }}
       overrides={{
         NavItem: {
           style: ({$active, $theme}) => {
@@ -32,6 +43,7 @@ function SideNav() {
         }
       }}
     />
+    </React.Fragment>
   )
 }
 
