@@ -7,7 +7,12 @@ import { StyledLink } from "baseui/Link"
 
 function Podcast() {
   return (
-    <Block>
+    <Block
+      display="flex"
+      flexDirection="column"
+      justifyContent="space-between"
+      height="75vh"
+    >
       <Block marginTop="25px" marginLeft="15px">
         <Link to="/">
           <LogoHorizontal />
