@@ -10,6 +10,8 @@ import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
 import Footer from '../Components/Footer'
 
+import { useRouteMatch } from 'react-router-dom'
+
 const SidebarStyled = styled('div', ({$theme}) => ({
   //backgroundColor: "#f60",
 }));
@@ -17,7 +19,6 @@ const SidebarStyled = styled('div', ({$theme}) => ({
 const ContentStyled = styled('div', ({$theme}) => ({
   //backgroundColor: $theme.colors.backgroundAccent,
 }));
-
 
 const Main = () => {
   const [css, theme] = useStyletron();
