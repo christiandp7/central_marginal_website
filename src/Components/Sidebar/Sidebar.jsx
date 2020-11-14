@@ -10,7 +10,7 @@ function Sidebar() {
       <SideNav />
       <Switch>
         <Route exact path="/">
-          <Block maxWidth="100%" padding="1em 12px 1em 1.2em" marginTop="25px">
+          <Block maxWidth="100%" padding="1em 12px 1em 12px" marginTop="25px">
             <SideSlider />
           </Block>
         </Route>

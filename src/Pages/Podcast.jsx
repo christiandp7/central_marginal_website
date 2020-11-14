@@ -3,6 +3,7 @@ import { Block } from 'baseui/block'
 import { Link } from 'react-router-dom'
 import { LogoHorizontal } from '../Svg/Logo'
 import { Paragraph1 } from "baseui/typography"
+import { StyledLink } from "baseui/Link"
 
 function Podcast() {
   return (
@@ -13,10 +14,18 @@ function Podcast() {
         </Link>
       </Block>
       <Block marginLeft="15px">
-        <Paragraph1 marginBottom="scale500"><a>Episodio 1 (Comienzos)</a></Paragraph1>
-        <Paragraph1 marginBottom="scale500"><a>Episodio 2 (Segundos)</a></Paragraph1>
-        <Paragraph1 marginBottom="scale500"><a>Episodio 3 (Terceros)</a></Paragraph1>
-        <Paragraph1 marginBottom="scale500"><a>Episodio 4 (Fianles)</a></Paragraph1>
+        <Paragraph1 marginBottom="scale500">
+          <StyledLink target="_blank" href="/">Episodio 1 (Comienzos)</StyledLink>
+        </Paragraph1>
+        <Paragraph1 marginBottom="scale500">
+          <StyledLink target="_blank" href="/">Episodio 2 (Segundos)</StyledLink>
+        </Paragraph1>
+        <Paragraph1 marginBottom="scale500">
+          <StyledLink target="_blank" href="/">Episodio 3 (Terceros)</StyledLink>
+        </Paragraph1>
+        <Paragraph1 marginBottom="scale500">
+          <StyledLink target="_blank" href="/">Episodio 4 (Fianles)</StyledLink>
+        </Paragraph1>
       </Block>
     </Block>
   )

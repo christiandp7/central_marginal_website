@@ -31,7 +31,7 @@ function Home() {
         </Block>
         
       </Block>
-      <Block width="15%" maxHeight="100vh" display="flex" alignItems="center" justifyContent="center" >
+      <Block width="15%" maxHeight="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
         <Link to="/">
           <LogoVertical />
         </Link>

@@ -10,6 +10,25 @@ const navItems = [
   { title: 'guión', itemId: '/guion' },
 ]
 
+const navStyles = theme => {
+  return {
+    textAlign: 'right',
+    fontSize: theme.sizing.scale750,
+    ':hover': {
+      color: theme.colors.primary600,
+    },
+  }
+}
+
+const navActiveStyles = theme => {
+  return {
+    backgroundColor: "transparent",
+    borderLeftColor: "transparent",
+    //color: theme.colors.primary200,
+    ...navStyles(theme)
+  }
+}
+
 function SideNav() {
   let location = useLocation();
   let history = useHistory();
@@ -26,19 +45,10 @@ function SideNav() {
       overrides={{
         NavItem: {
           style: ({$active, $theme}) => {
-            return {
-              textAlign: 'right',
-              fontSize: $theme.sizing.scale750,
-              ':hover': {
-                color: $theme.colors.primary600,
-              },
-              /*backgroundColor: $theme.colors.positive400,
-              borderLeftColor: $theme.colors.mono900,
-              color: $theme.colors.mono900,
-              ':hover': {
-                color: $theme.colors.positive400,
-              },*/
+            if($active){
+              return navActiveStyles($theme)
             }
+            return navStyles($theme)
           }
         }
       }}

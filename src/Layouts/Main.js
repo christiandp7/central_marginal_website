@@ -27,11 +27,11 @@ const Main = () => {
       <Grid
         //gridColumns={}
         gridGaps={0}
-        gridGutters={0}
+        //gridGutters={0}
         gridMargins={0}
         gridMaxWidth="none"
       >
-        <Cell span={[0 ,0, 2]}>
+        <Cell order={0} span={[0 ,0, 2]}>
           <SidebarStyled>
             <Sidebar />
           </SidebarStyled>
