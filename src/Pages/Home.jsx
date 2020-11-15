@@ -41,4 +41,17 @@ function Home() {
   )
 }
 
-export default Home
+function Home2() {
+  return (
+    <Block>
+      <HomeSliderSlick />
+      <Block width="15%" maxHeight="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
+        <Link to="/">
+          <LogoVertical />
+        </Link>
+      </Block>
+    </Block>
+  )
+}
+
+export default Home2

@@ -14,8 +14,9 @@ const settings = {
   speed: 400,
   slidesToShow: 1,
   slidesToScroll: 1,
-  accessibility: true,
+  //accessibility: true,
   autoplay: true,
+  adaptativeHeight: true,
   autoplaySpeed: 3000,
   arrows: false,
   speed: 500,
@@ -30,43 +31,44 @@ function HomeSliderSlick() {
   let { setSlider1, slider2 } = useContext(SliderContext);
   let [ css, theme ] = useStyletron();
 
-  const figStyles = css({margin:'0', outline: '0'});
+  const figStyles = css({margin:'0', outline: '0', width: 'auto'});
   const figCapStyles = css({marginTop: '5px'});
+  const imgStyles = css({width: '100%', maxWidth: '100%'});
 
   return (
     <Slider {...settings} ref={slider => setSlider1(slider)} asNavFor={slider2}>
       <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <img className={imgStyles} src="https://picsum.photos/1000/400" alt="Trulli"  />
         <figcaption className={figCapStyles}>
           <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
         </figcaption>
       </figure>
       <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <img className={imgStyles} src="https://picsum.photos/1000/400" alt="Trulli"  />
         <figcaption className={figCapStyles}>
           <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
         </figcaption>
       </figure>
       <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <img className={imgStyles} src="https://picsum.photos/1000/400" alt="Trulli"  />
         <figcaption className={figCapStyles}>
           <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
         </figcaption>
       </figure>
       <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <img className={imgStyles} src="https://picsum.photos/1000/400" alt="Trulli"  />
         <figcaption className={figCapStyles}>
           <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
         </figcaption>
       </figure>
       <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <img className={imgStyles} src="https://picsum.photos/1000/400" alt="Trulli"  />
         <figcaption className={figCapStyles}>
           <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
         </figcaption>
       </figure>
       <figure className={figStyles}>
-        <img src="https://picsum.photos/1000/400" alt="Trulli"  />
+        <img className={imgStyles} src="https://picsum.photos/1000/400" alt="Trulli"  />
         <figcaption className={figCapStyles}>
           <Paragraph2>Fig.1 - Trulli, Puglia, Italy.</Paragraph2>
         </figcaption>
