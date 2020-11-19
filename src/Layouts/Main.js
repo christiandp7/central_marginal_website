@@ -22,10 +22,10 @@ const Main = () => {
   const changeSidebarOrder = () => {
     let currentPage = location.pathname;
     //console.log(currentPage)
-    if(currentPage == "/podcast"){
-      return 1
-    } else {
+    if(currentPage == "/"){
       return 0
+    } else {
+      return 1
     }
   }
   

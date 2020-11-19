@@ -1,18 +1,15 @@
 import React, { Component } from 'react'
-import HomeSlider from '../Components/HomeSlider'
-import HomeSliderSlick from '../Components/HomeSliderSlick'
-//import LogoVertical from '../Svg/LogoVertical'
+import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
 import { LogoVertical } from '../Svg/Logo'
 
 import {FlexGrid, FlexGridItem} from 'baseui/flex-grid';
 import { H3 } from 'baseui/typography'
 import { Block } from 'baseui/block'
-import { useStyletron } from 'baseui'
+//import { useStyletron } from 'baseui'
 import { Grid, Cell } from 'baseui/layout-grid';
 
 import { NavLink as Link } from 'react-router-dom'
 
-import SliderTry from '../Components/SliderTry'
 
 function Home() {
   return (
