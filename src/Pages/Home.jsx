@@ -46,12 +46,23 @@ function Home2() {
     <Grid
       gridGutters={0}
       gridMargins={0}
+      gridMaxWidth="none"
     >
       <Cell span={[3,7,11]}>
-        <HomeSliderSlick />
+        <Block
+          
+          height="100vh"
+          display="flex"
+          justifyContent="flex-end"
+          alignItems="center"
+          maxWidth={["100%","800px"]}
+          marginLeft="auto"
+        >
+          <HomeSliderSlick />
+        </Block>
       </Cell>
       <Cell span={[1,1,1]}>
-        <Block maxHeight="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
+        <Block height="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
           <Link to="/">
             <LogoVertical />
           </Link>

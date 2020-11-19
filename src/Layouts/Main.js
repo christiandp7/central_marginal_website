@@ -4,7 +4,7 @@ import {styled} from 'baseui';
 import {Grid, Cell} from 'baseui/layout-grid';
 import { Block } from 'baseui/block'
 
-import { BrowserRouter as Router } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
@@ -12,19 +12,25 @@ import Footer from '../Components/Footer'
 
 import { useRouteMatch } from 'react-router-dom'
 
-const SidebarStyled = styled('div', ({$theme}) => ({
-  //backgroundColor: "#f60",
-}));
 
-const ContentStyled = styled('div', ({$theme}) => ({
-  //backgroundColor: $theme.colors.backgroundAccent,
-}));
+
 
 const Main = () => {
   const [css, theme] = useStyletron();
+  let location = useLocation();
+
+  const changeSidebarOrder = () => {
+    let currentPage = location.pathname;
+    //console.log(currentPage)
+    if(currentPage == "/podcast"){
+      return 1
+    } else {
+      return 0
+    }
+  }
   
   return (
-    <Router>
+    <>
       <Grid
         //gridColumns={}
         gridGaps={0}
@@ -32,19 +38,15 @@ const Main = () => {
         gridMargins={0}
         gridMaxWidth="none"
       >
-        <Cell order={0} span={[0 ,0, 2]}>
-          <SidebarStyled>
-            <Sidebar />
-          </SidebarStyled>
+        <Cell order={changeSidebarOrder()} span={[0 ,0, 2]}>
+          <Sidebar />
         </Cell>
         <Cell span={[4 ,8, 10]}>
-          <ContentStyled>
-            <Content />
-          </ContentStyled>
+          <Content />
         </Cell>  
       </Grid>
       <Footer />
-    </Router>
+    </>
   )
 }
 

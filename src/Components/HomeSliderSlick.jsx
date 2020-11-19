@@ -18,11 +18,11 @@ const settings = {
   autoplay: true,
   adaptativeHeight: true,
   autoplaySpeed: 3000,
-  arrows: false,
+  //arrows: false,
   speed: 500,
   fade: true,
   cssEase: 'linear',
-  className: "homeSlider"
+  className: "homeSlider",
   //nextArrow: '<button type="button" className="slick-next">Nrxt</button>'
 };
 
@@ -36,7 +36,7 @@ function HomeSliderSlick() {
   const imgStyles = css({width: '100%', maxWidth: '100%'});
 
   return (
-    <Slider {...settings} ref={slider => setSlider1(slider)} asNavFor={slider2}>
+    <Slider {...settings} style={{maxWidth: '100%'}} ref={slider => setSlider1(slider)} asNavFor={slider2}>
       <figure className={figStyles}>
         <img className={imgStyles} src="https://picsum.photos/1000/400" alt="Trulli"  />
         <figcaption className={figCapStyles}>

@@ -2,6 +2,7 @@ import {Client as Styletron} from 'styletron-engine-atomic';
 import {Provider as StyletronProvider} from 'styletron-react';
 import {LightTheme, BaseProvider, styled} from 'baseui';
 import { SliderProvider } from './Context/SliderContext'
+import { BrowserRouter as Router } from "react-router-dom"
 
 import './assets/scss/index.scss'
 // Slick Slider
@@ -17,7 +18,9 @@ function App() {
     <StyletronProvider value={engine}>
       <BaseProvider theme={LightTheme}>
         <SliderProvider>
-          <Main />
+          <Router>
+            <Main />
+          </Router>
         </SliderProvider>
       </BaseProvider>
     </StyletronProvider>
