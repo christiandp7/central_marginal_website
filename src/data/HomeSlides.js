@@ -1,0 +1,7 @@
+export { default as SlideImg1 } from '../assets/images/SlideShow_CM-01.jpg'
+export { default as SlideImg2 } from '../assets/images/SlideShow_CM-02.jpg'
+export { default as SlideImg3 } from '../assets/images/SlideShow_CM-03.jpg'
+export { default as SlideImg4 } from '../assets/images/SlideShow_CM-04.jpg'
+export { default as SlideImg5 } from '../assets/images/SlideShow_CM-05.jpg'
+export { default as SlideImg6 } from '../assets/images/SlideShow_CM-06.jpg'
+export { default as SlideImg7 } from '../assets/images/SlideShow_CM-07.jpg'
