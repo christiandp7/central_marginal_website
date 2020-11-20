@@ -10,6 +10,8 @@ import { Grid, Cell } from 'baseui/layout-grid';
 
 import { NavLink as Link } from 'react-router-dom'
 
+import Fade from 'react-reveal/Fade';
+
 
 function Home() {
   return (
@@ -24,14 +26,20 @@ function Home() {
       <Block width="85%" display="flex" justifyContent="flex-end" alignItems="center">
         <Block display="block" maxWidth="660px" width="100%">
           {/*<HomeSliderSlick />*/}
-          <HomeSliderSlick />
+            <Fade bottom>
+              <HomeSliderSlick />
+            </Fade>
         </Block>
         
       </Block>
       <Block width="15%" maxHeight="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
+        
         <Link to="/">
-          <LogoVertical />
+          <Fade left>
+            <LogoVertical />
+          </Fade>
         </Link>
+        
       </Block>
       
     </Block>

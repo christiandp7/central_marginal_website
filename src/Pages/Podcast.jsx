@@ -5,6 +5,8 @@ import { LogoHorizontal } from '../Svg/Logo'
 import { Paragraph1 } from "baseui/typography"
 import { StyledLink } from "baseui/Link"
 
+import Fade from 'react-reveal/Fade';
+
 function Podcast() {
   return (
     <Block
@@ -15,7 +17,9 @@ function Podcast() {
     >
       <Block marginTop="25px" marginLeft="15px">
         <Link to="/">
-          <LogoHorizontal />
+          <Fade top>
+            <LogoHorizontal />
+          </Fade>
         </Link>
       </Block>
       <Block marginLeft="15px">
