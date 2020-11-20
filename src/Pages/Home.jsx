@@ -17,8 +17,10 @@ function Home() {
   return (
     <Block 
       display="flex"
+      //flexWrap="wrap"
       justifyContent="flex-end"
-      height="100vh"
+      //justifyContent="center"
+      //height="100vh"
       /*display="flex"
       justifyContent="flex-end"
       flexWrap="wrap"*/
@@ -26,22 +28,19 @@ function Home() {
       <Block width="85%" display="flex" justifyContent="flex-end" alignItems="center">
         <Block display="block" maxWidth="660px" width="100%">
           {/*<HomeSliderSlick />*/}
-            <Fade bottom>
+            
               <HomeSliderSlick />
-            </Fade>
+            
         </Block>
         
       </Block>
-      <Block width="15%" maxHeight="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
-        
+      <Block width="15%" overflow="hidden" maxHeight="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
         <Link to="/">
-          <Fade left>
+          <Fade right>
             <LogoVertical />
           </Fade>
         </Link>
-        
       </Block>
-      
     </Block>
   )
 }
@@ -56,20 +55,27 @@ function Home2() {
       <Cell span={[3,7,11]}>
         <Block
           
-          height="100vh"
+          /*height="100vh"
           display="flex"
           justifyContent="flex-end"
           alignItems="center"
           maxWidth={["100%","800px"]}
-          marginLeft="auto"
+          marginLeft="auto"*/
+
+          /*marginTop="15%"
+          maxWidth="800px"*/
         >
-          <HomeSliderSlick />
+          
+            <HomeSliderSlick />
+          
         </Block>
       </Cell>
       <Cell span={[1,1,1]}>
-        <Block height="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
+        <Block height="100vh" overflow="hidden" display="flex" alignItems="center" justifyContent="flex-end" >
           <Link to="/">
-            <LogoVertical />
+            <Fade right>
+              <LogoVertical />
+            </Fade>
           </Link>
         </Block>
       </Cell>
@@ -77,4 +83,4 @@ function Home2() {
   )
 }
 
-export default Home2
+export default Home
