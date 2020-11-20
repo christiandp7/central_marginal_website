@@ -1,6 +1,7 @@
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Provider as StyletronProvider} from 'styletron-react';
-import {LightTheme, BaseProvider, styled} from 'baseui';
+import {LightTheme, BaseProvider, styled, createTheme} from 'baseui';
+
 import { SliderProvider } from './Context/SliderContext'
 import { BrowserRouter as Router } from "react-router-dom"
 
@@ -13,10 +14,16 @@ import Main from './Layouts/Main';
 
 const engine = new Styletron();
 
+// Theme overrides
+const primitives = {
+  primaryFontFamily: 'Arvin',
+};
+const theme = createTheme(primitives);
+
 function App() {
   return (
     <StyletronProvider value={engine}>
-      <BaseProvider theme={LightTheme}>
+      <BaseProvider theme={theme}>
         <SliderProvider>
           <Router>
             <Main />
