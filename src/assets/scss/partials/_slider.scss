@@ -1,0 +1,25 @@
+.slick-slide {
+  figure {
+    img {
+      /*-webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      //@include transition-ease(0.5s);
+
+      &:hover {
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+      }*/
+    }
+  }
+}
+
+// SideSlider
+.sideSlider {
+  .slick-slide {
+    &:not(.slick-current) {
+      img {
+        opacity: 0.5;
+      }
+    }
+  }
+}

@@ -1,3 +1,7 @@
+// Mixins
+@import "partials/mixins";
+
+// Fonts
 @import "partials/fonts";
 
 // Required Core Stylesheet
@@ -6,7 +10,7 @@
 // Optional Theme Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
-@import "partials/homeSlider";
+@import "partials/slider";
 
 * {
   margin: 0;

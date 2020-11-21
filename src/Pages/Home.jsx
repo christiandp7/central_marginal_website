@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
-import { LogoVertical } from '../Svg/Logo'
+import { LogoVertical, LogoVerticalRight } from '../Svg/Logo'
 
 import {FlexGrid, FlexGridItem} from 'baseui/flex-grid';
 import { H3 } from 'baseui/typography'
@@ -26,7 +26,10 @@ function Home() {
       flexWrap="wrap"*/
     >
       <Block width="85%" display="flex" justifyContent="flex-end" alignItems="center">
-        <Block display="block" maxWidth="660px" width="100%">
+        <Block 
+          width={['100%','100%', '100%', '75%']} 
+          maxWidth="1280px"
+        >
           {/*<HomeSliderSlick />*/}
             
               <HomeSliderSlick />
