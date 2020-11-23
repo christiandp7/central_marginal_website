@@ -12,6 +12,7 @@ import { NavLink as Link } from 'react-router-dom'
 
 import Fade from 'react-reveal/Fade';
 
+import Footer from '../Components/Footer'
 
 function Home() {
   return (
@@ -44,6 +45,9 @@ function Home() {
           </Fade>
         </Link>
       </Block>
+
+
+      {/*<Footer />*/}
     </Block>
   )
 }

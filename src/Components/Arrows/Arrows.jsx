@@ -67,7 +67,7 @@ export const NextArrowDown = ({ onClick }) => {
             ...arrowsStyle($theme),
             top: 'auto',
             left: '36%',
-            bottom: '0'
+            bottom: '-35px'
           })
         }
       }}

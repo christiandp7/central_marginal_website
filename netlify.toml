@@ -1,0 +1,29 @@
+[[redirects]]
+from = "/"
+status = 200
+to = "/index.html"
+
+[[redirects]]
+from = "/podcast"
+status = 200
+to = "/index.html"
+
+[[redirects]]
+from = "/archivo"
+status = 200
+to = "/index.html"
+
+[[redirects]]
+from = "/participantes"
+status = 200
+to = "/index.html"
+
+[[redirects]]
+from = "/guion"
+status = 200
+to = "/index.html"
+
+[[redirects]]
+from = "/*"
+status = 400
+to = "/index.html"

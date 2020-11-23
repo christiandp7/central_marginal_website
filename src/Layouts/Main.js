@@ -45,7 +45,7 @@ const Main = () => {
           <Content />
         </Cell>  
       </Grid>
-      <Footer />
+      <Footer position="absolute" />
     </>
   )
 }

@@ -2,10 +2,11 @@ import React from 'react'
 import { Block } from 'baseui/block'
 import { Paragraph3 } from 'baseui/typography'
 
-function Footer() {
+function Footer({ position="static"}) {
+
   return (
     <Block 
-      position="absolute"
+      position={position}
       bottom="0"
       width="100%"
       paddingBottom="16px"

@@ -9,7 +9,7 @@ function Sidebar() {
     <Block paddingTop="40px" maxHeight="100vh">
       <SideNav />
       <Switch>
-        <Route exact path="/">
+        <Route exact path={["/","/archivo"]}>
           <Block maxWidth="100%" padding="1em 12px 1em 12px" marginTop="20px">
             <SideSlider />
           </Block>
