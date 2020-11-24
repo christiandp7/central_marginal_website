@@ -1,18 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
-import { LogoVertical, LogoVerticalRight } from '../Svg/Logo'
+import { LogoVertical } from '../Svg/Logo'
 
-import {FlexGrid, FlexGridItem} from 'baseui/flex-grid';
-import { H3 } from 'baseui/typography'
 import { Block } from 'baseui/block'
 //import { useStyletron } from 'baseui'
-import { Grid, Cell } from 'baseui/layout-grid';
 
 import { NavLink as Link } from 'react-router-dom'
 
 import Fade from 'react-reveal/Fade';
 
-import Footer from '../Components/Footer'
 
 function Home() {
   return (
@@ -31,10 +27,9 @@ function Home() {
           width={['100%','100%', '100%', '75%']} 
           maxWidth="1280px"
         >
-          {/*<HomeSliderSlick />*/}
-            
+            <Fade>
               <HomeSliderSlick />
-            
+            </Fade>
         </Block>
         
       </Block>
@@ -49,44 +44,6 @@ function Home() {
 
       {/*<Footer />*/}
     </Block>
-  )
-}
-
-function Home2() {
-  return (
-    <Grid
-      gridGutters={0}
-      gridMargins={0}
-      gridMaxWidth="none"
-    >
-      <Cell span={[3,7,11]}>
-        <Block
-          
-          /*height="100vh"
-          display="flex"
-          justifyContent="flex-end"
-          alignItems="center"
-          maxWidth={["100%","800px"]}
-          marginLeft="auto"*/
-
-          /*marginTop="15%"
-          maxWidth="800px"*/
-        >
-          
-            <HomeSliderSlick />
-          
-        </Block>
-      </Cell>
-      <Cell span={[1,1,1]}>
-        <Block height="100vh" overflow="hidden" display="flex" alignItems="center" justifyContent="flex-end" >
-          <Link to="/">
-            <Fade right>
-              <LogoVertical />
-            </Fade>
-          </Link>
-        </Block>
-      </Cell>
-    </Grid>
   )
 }
 

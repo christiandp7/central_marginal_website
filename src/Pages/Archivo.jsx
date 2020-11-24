@@ -6,7 +6,7 @@ import { NavLink as Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
 
 import { LogoVerticalLeft } from '../Svg/Logo'
-import { Paragraph1, Paragraph2 } from 'baseui/typography';
+import { Paragraph2 } from 'baseui/typography';
 
 function Archivo() {
   return (
@@ -26,24 +26,25 @@ function Archivo() {
         </Link>
       </Block>
       <Block width="85%" display="flex" justifyContent="flex-end" alignItems="center">
-        <Block display="block" maxWidth="550px" width="100%">
-          <Block
-            maxWidth="450px"
-            marginLeft="auto"
-            marginBottom="15px"
-          >
-            <Paragraph2  
-              style={{textAlign:"justify"}}
+        <Fade>
+          <Block display="block" maxWidth="550px" width="100%">
+            <Block
+              maxWidth="450px"
+              marginLeft="auto"
+              marginBottom="15px"
             >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Dignissimos in quos ipsum fuga expedita laborum numquam quidem iure 
-              quasi soluta ab nihil, perferendis sint recusandae! Voluptatem doloremque 
-              veritatis ipsum recusandae?
-            </Paragraph2>
+              <Paragraph2  
+                style={{textAlign:"justify"}}
+              >
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Dignissimos in quos ipsum fuga expedita laborum numquam quidem iure 
+                quasi soluta ab nihil, perferendis sint recusandae! Voluptatem doloremque 
+                veritatis ipsum recusandae?
+              </Paragraph2>
+            </Block>
+            <HomeSliderSlick />
           </Block>
-          <HomeSliderSlick />
-        </Block>
-        
+        </Fade>
       </Block>
       
       

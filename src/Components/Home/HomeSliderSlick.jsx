@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import Slider from "react-slick";
-import { ChevronLeft, ChevronRight } from "baseui/icon";
 import { SliderContext } from '../../Context/SliderContext'
 import { useStyletron } from 'baseui'
 import { Paragraph2 } from 'baseui/typography'
@@ -8,12 +7,10 @@ import { PrevArrow, NextArrow } from '../Arrows/Arrows'
 
 import homeSlidesData from '../../data/HomeSlides'
 
-const nextArrow = () => (<button type="button" className="slick-next">Nrxt</button>)
 
 const settings = {
   dots: true,
   infinite: true,
-  speed: 400,
   slidesToShow: 1,
   slidesToScroll: 1,
   accessibility: true,

@@ -1,8 +1,6 @@
-import React, {  } from 'react'
-import {useStyletron} from 'baseui';
-import {styled} from 'baseui';
+import React from 'react'
 import {Grid, Cell} from 'baseui/layout-grid';
-import { Block } from 'baseui/block'
+
 
 import { useLocation } from "react-router-dom"
 
@@ -10,19 +8,17 @@ import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
 import Footer from '../Components/Footer'
 
-import { useRouteMatch } from 'react-router-dom'
 
 
 
 
 const Main = () => {
-  const [css, theme] = useStyletron();
   let location = useLocation();
 
   const changeSidebarOrder = () => {
     let currentPage = location.pathname;
     //console.log(currentPage)
-    if(currentPage == "/"){
+    if(currentPage === "/"){
       return 0
     } else {
       return 1

@@ -13,7 +13,6 @@ const settings = {
   slidesToShow: 3,
   slidesToScroll: 1,
   accessibility: true,
-  vertical: true,
   verticalSwiping: true,
   swipeToSlide: true,
   //arrows: false,

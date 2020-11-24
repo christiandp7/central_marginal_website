@@ -1,6 +1,6 @@
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Provider as StyletronProvider} from 'styletron-react';
-import {LightTheme, BaseProvider, styled, createTheme} from 'baseui';
+import { BaseProvider, createTheme} from 'baseui';
 
 import { SliderProvider } from './Context/SliderContext'
 import { BrowserRouter as Router } from "react-router-dom"

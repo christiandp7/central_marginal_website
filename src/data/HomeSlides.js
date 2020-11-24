@@ -4,7 +4,7 @@ import SlideImg3 from '../assets/images/home-03.jpg'
 import SlideImg4 from '../assets/images/home-04.jpg'
 
 
-export default [
+let HomeSlides = [
   {
     img: SlideImg1,
     caption: 'Slide 1 caption' 
@@ -22,3 +22,5 @@ export default [
     caption: 'Slide 4 caption' 
   },
 ]
+
+export default HomeSlides

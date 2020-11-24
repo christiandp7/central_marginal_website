@@ -1,4 +1,3 @@
-import userEvent from '@testing-library/user-event';
 import React, { createContext, useState } from 'react'
 
 let SliderContext = createContext();
