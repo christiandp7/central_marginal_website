@@ -3,7 +3,6 @@ import { Block } from 'baseui/block'
 import { Link } from 'react-router-dom'
 import { LogoHorizontal } from '../Svg/Logo'
 import { Paragraph1 } from "baseui/typography"
-import { StyledLink } from "baseui/Link"
 
 import Fade from 'react-reveal/Fade';
 
