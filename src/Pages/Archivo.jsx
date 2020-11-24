@@ -33,7 +33,7 @@ function Archivo() {
             marginBottom="15px"
           >
             <Paragraph2  
-              textAlign="justify"
+              style={{textAlign:"justify"}}
             >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
               Dignissimos in quos ipsum fuga expedita laborum numquam quidem iure 
