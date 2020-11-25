@@ -1,7 +1,10 @@
 import React from 'react'
-import { Navigation } from "baseui/side-navigation";
+import { Navigation, StyledNavItem, } from "baseui/side-navigation";
 import { withRouter } from "react-router";
 import { useLocation, useHistory } from "react-router-dom"
+import { useStyletron } from "baseui"
+import { ChevronRight } from "../../Svg/Chevron"
+import { Block } from "baseui/Block"
 
 const navItems = [
   { title: 'podcast', itemId: '/podcast' },
@@ -10,17 +13,18 @@ const navItems = [
   { title: 'guión', itemId: '/guion' },
 ]
 
-const navStyles = theme => {
+const navStyles = (theme) => {
   return {
     textAlign: 'right',
     fontSize: theme.sizing.scale750,
+    cursor: 'pointer',
     ':hover': {
       color: theme.colors.primary600,
     },
   }
 }
 
-const navActiveStyles = theme => {
+const navActiveStyles = (theme) => {
   return {
     backgroundColor: "transparent",
     borderLeftColor: "transparent",
@@ -30,6 +34,7 @@ const navActiveStyles = theme => {
 }
 
 function SideNav() {
+  const [css, theme] = useStyletron();
   let location = useLocation();
   let history = useHistory();
   return (
@@ -43,14 +48,37 @@ function SideNav() {
         history.push(item.itemId);
       }}
       overrides={{
-        NavItem: {
+        /*NavItem: {
           style: ({$active, $theme}) => {
             if($active){
               return navActiveStyles($theme)
             }
             return navStyles($theme)
           }
-        }
+        },*/
+      NavItem: {
+        component: ({children, $active}) => {
+          if($active) {
+            return (
+              <StyledNavItem 
+                style={navActiveStyles(theme)} 
+              >
+                <Block
+                  display="inline"
+                  position="relative"
+                  top="4px"
+                  right="4px"
+                >
+                  <ChevronRight size={18} />
+                </Block>
+                {children}
+              </StyledNavItem>
+            )
+          }
+          return <StyledNavItem style={navStyles(theme)} >{children}</StyledNavItem>
+        },
+      }
+        
       }}
     />
     </React.Fragment>
