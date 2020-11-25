@@ -1,6 +1,7 @@
 import React from 'react'
 import {Button, SHAPE, SIZE, KIND} from 'baseui/button';
-import {ChevronLeft, ChevronRight, ChevronDown } from 'baseui/icon';
+//import { ChevronLeft, ChevronRight, ChevronDown } from 'baseui/icon';
+import { ChevronLeft, ChevronRight, ChevronDown } from '../../Svg/Chevron'
 
 const arrowsStyle = theme => {
   return {
@@ -15,7 +16,7 @@ export const PrevArrow = ({ onClick }) => {
   return (
     <Button 
       onClick={onClick} 
-      size={SIZE.compact} 
+      //size={SIZE.compact} 
       shape={SHAPE.circle}
       kind={KIND.tertiary}
       overrides={{
@@ -27,7 +28,7 @@ export const PrevArrow = ({ onClick }) => {
         }
       }}
     >
-      <ChevronLeft size={30} />
+      <ChevronLeft size={24} />
     </Button>
   )
 }
@@ -36,7 +37,7 @@ export const NextArrow = ({ onClick }) => {
   return (
     <Button 
       onClick={onClick} 
-      size={SIZE.compact} 
+      //size={SIZE.compact} 
       shape={SHAPE.circle}
       kind={KIND.tertiary}
       overrides={{
@@ -48,7 +49,7 @@ export const NextArrow = ({ onClick }) => {
         }
       }}
     >
-      <ChevronRight size={30} />
+      <ChevronRight size={24} />
     </Button>
   )
   //return (<button type="button" className="slider-next"><ChevronRight /></button>)
@@ -58,7 +59,7 @@ export const NextArrowDown = ({ onClick }) => {
   return (
     <Button 
       onClick={onClick} 
-      size={SIZE.compact} 
+      //size={SIZE.compact} 
       shape={SHAPE.circle}
       kind={KIND.tertiary}
       overrides={{
@@ -67,12 +68,12 @@ export const NextArrowDown = ({ onClick }) => {
             ...arrowsStyle($theme),
             top: 'auto',
             left: '36%',
-            bottom: '-35px'
+            bottom: '-38px'
           })
         }
       }}
     >
-      <ChevronDown size={30} />
+      <ChevronDown size={24} />
     </Button>
   )
   //return (<button type="button" className="slider-next"><ChevronRight /></button>)
