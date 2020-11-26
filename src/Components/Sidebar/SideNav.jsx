@@ -4,7 +4,7 @@ import { withRouter } from "react-router";
 import { useLocation, useHistory } from "react-router-dom"
 import { useStyletron } from "baseui"
 import { ChevronRight } from "../../Svg/Chevron"
-import { Block } from "baseui/Block"
+import { Block } from "baseui/block"
 
 const navItems = [
   { title: 'podcast', itemId: '/podcast' },
