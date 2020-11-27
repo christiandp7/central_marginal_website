@@ -6,7 +6,6 @@ import Home from '../Pages/Home'
 import Podcast from '../Pages/Podcast'
 import Archivo from '../Pages/Archivo'
 import Participantes from '../Pages/Participantes'
-import Guion from '../Pages/Guion'
 
 function Content() {
   return (
@@ -22,9 +21,6 @@ function Content() {
       </Route>
       <Route exact path="/participantes">
         <Participantes />
-      </Route>
-      <Route exact path="/guion">
-        <Guion />
       </Route>
 
       <Route exact path="/404">

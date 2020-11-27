@@ -7,10 +7,10 @@ import { ChevronRight } from "../../Svg/Chevron"
 import { Block } from "baseui/block"
 
 const navItems = [
+  { title: 'inicio', itemId: '/' },
   { title: 'podcast', itemId: '/podcast' },
   { title: 'archivo', itemId: '/archivo' },
   { title: 'participantes', itemId: '/participantes' },
-  { title: 'guión', itemId: '/guion' },
 ]
 
 const navStyles = (theme) => {
@@ -66,10 +66,10 @@ function SideNav() {
                 <Block
                   display="inline"
                   position="relative"
-                  top="4px"
+                  top="3px"
                   right="4px"
                 >
-                  <ChevronRight size={18} />
+                  <ChevronRight size={17} />
                 </Block>
                 {children}
               </StyledNavItem>
