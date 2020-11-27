@@ -26,7 +26,7 @@ function Participantes() {
       </Block>
       <Block marginLeft="15px">
         <Paragraph1 style={namesStyle} marginBottom="scale500">
-          Theowaldo Palma
+          Theowaldo Perna
         </Paragraph1>
         <Paragraph1 style={namesStyle} marginBottom="scale500">
           Marianne Benoit Benzan
@@ -36,6 +36,9 @@ function Participantes() {
         </Paragraph1>
         <Paragraph1 style={namesStyle} marginBottom="scale500">
           Celeste R.
+        </Paragraph1>
+        <Paragraph1 style={namesStyle} marginBottom="scale500">
+          Amalia R.
         </Paragraph1>
       </Block>
     </Block>
