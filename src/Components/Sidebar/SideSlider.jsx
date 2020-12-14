@@ -19,7 +19,6 @@ const settings = {
   className: "sideSlider",
   focusOnSelect: true,
   nextArrow: <NextArrowDown />,
-  prevArrow: null
   //pauseOnHover: true,
   //adaptiveHeight: true,
   //variableWidth: true,
@@ -28,7 +27,7 @@ const settings = {
 function SideSlider() {
   let { setSlider2, slider1 } = useContext(SliderContext);
   const [css, theme] = useStyletron();
-  const figStyles = css({marginLeft: 0, MarginRight: 0, outline: '0'});
+  const figStyles = css({marginLeft: 0, MarginRight: 0, outline: '0', padding: '0 1px'});
   const imgStyles = css({ maxWidth: '100%'})
 
   return (
