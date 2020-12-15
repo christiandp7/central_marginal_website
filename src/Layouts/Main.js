@@ -70,7 +70,7 @@ const Main2 = () => {
         <Block
           width="190px"
           height="100%"
-          backgroundColor="red"
+          //backgroundColor="red"
           position="fixed"
           //padding="0 8px"
           //margin="0 15px"
@@ -79,7 +79,8 @@ const Main2 = () => {
         </Block>
         <Block
           paddingLeft={['0','0','190px']}
-          backgroundColor="#f60"
+          //backgroundColor="#f60"
+          //display="inline-block"
           minHeight="100vh"
         >
           <Content />

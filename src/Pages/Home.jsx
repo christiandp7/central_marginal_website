@@ -33,7 +33,15 @@ function Home() {
         </Block>
         
       </Block>
-      <Block width="15%" overflow="hidden" maxHeight="100vh" display="flex" alignItems="center" justifyContent="flex-end" >
+      <Block 
+        width="15%" 
+        overflow="hidden" 
+        maxHeight="100vh" 
+        display="flex" 
+        alignItems="center" 
+        justifyContent="flex-end" 
+        paddingRight="20px"
+      >
         <Link to="/">
           <Fade right>
             <LogoVertical />
