@@ -6,6 +6,11 @@
   transition: all $duration ease;
 }
 
+@mixin media-min-width($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
 @mixin media-max-width($breakpoint) {
   @media screen and (max-width: $breakpoint) {
     @content;

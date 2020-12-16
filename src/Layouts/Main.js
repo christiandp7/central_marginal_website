@@ -8,6 +8,7 @@ import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
 import Footer from '../Components/Footer'
 
+const sidebar_Width = "210px";
 
 const Main = () => {
   let location = useLocation();
@@ -48,13 +49,13 @@ const Main = () => {
 const Main2 = () => {
   let location = useLocation();
 
-  const changeSidebarOrder = () => {
+  const changeSidebarDirection = () => {
     let currentPage = location.pathname;
     //console.log(currentPage)
     if(currentPage === "/"){
-      return 0
+      return null
     } else {
-      return 1
+      return "sidebar-to-right"
     }
   }
   
@@ -68,29 +69,32 @@ const Main2 = () => {
         gridMaxWidth="none"
         //width="100%"
       >
-        <Block
-          width="190px"
-          height="100%"
-          //backgroundColor="red"
-          position="fixed"
-          left={["-190px", "-190px", "0"]}
-          //padding="0 8px"
-          //margin="0 15px"
-        >
+        
+        <SidebarWrapper sidebarDirection={changeSidebarDirection()}>
           <Sidebar />
-        </Block>
-        <Block
-          paddingLeft={['0','0','190px']}
-          //backgroundColor="#f60"
-          //display="inline-block"
-          minHeight="100vh"
-        >
+        </SidebarWrapper>
+
+        <ContentWrapper sidebarDirection={changeSidebarDirection()}>
           <Content />
+        </ContentWrapper>
           {/*<Footer />*/}
-        </Block>
+          
       </Block>
     </>
   )
 }
+
+
+const SidebarWrapper = ({ children,  sidebarDirection}) => (
+  <Block className={"sidebarWrapper " + sidebarDirection} >
+    {children}
+  </Block>
+);
+
+const ContentWrapper = ({ children, sidebarDirection }) => (
+  <Block className={"contentWrapper " + sidebarDirection} >
+    <Content />
+  </Block>
+)
 
 export default Main2
