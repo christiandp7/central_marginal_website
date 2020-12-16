@@ -66,12 +66,14 @@ const Main2 = () => {
         //gridGutters={0}
         gridMargins={0}
         gridMaxWidth="none"
+        //width="100%"
       >
         <Block
           width="190px"
           height="100%"
           //backgroundColor="red"
           position="fixed"
+          left={["-190px", "-190px", "0"]}
           //padding="0 8px"
           //margin="0 15px"
         >

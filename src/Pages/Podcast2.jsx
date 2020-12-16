@@ -15,23 +15,25 @@ import podcastData from '../data/PodcastData'
 function Podcast2() {
   return (
     <>
-      <Block marginTop="25px" marginLeft="15px">
+      <Block paddingTop="25px" padding="0 15px">
         <Link to="/">
           <Fade top>
             <LogoHorizontal />
           </Fade>
         </Link>
       </Block>
-      <Block margin="35px 0">
-        <Grid>
+      <Block
+        marginTop={["20px", "25px", "35px"]}
+        marginBottom={["20px", "25px", "35px"]}
+      >
+        <Grid gridMargins={[16,36,0]}>
           {
             podcastData.map((episode, i) => (
-              <Cell span={[4, 4, 6]} >
-                <Block 
-                  marginBottom="25px"
-                >
+              <Cell span={[16, 8, 6]} >
+                <Fade>
                   <Card
-                    overrides={{Root: {style: {maxWidth: '400px', margin: '0 auto', marginBottom: '20px'}}}}
+                    className="podcast_card"
+                    //overrides={{Root: {style: {margin: '0 auto'}}}}
                     headerImage={episode.image}
                     title={episode.title}
                   >
@@ -39,12 +41,12 @@ function Podcast2() {
                       {episode.text}
                     </StyledBody>
                     <StyledAction>
-                      <Button target="_blank" href={episode.link} overrides={{BaseButton: {style: {width: '100%'}}}}>
+                      <Button $as="a" target="_blank" href={episode.link} overrides={{BaseButton: {style: {width: '100%'}}}}>
                         ir al Podcast
                       </Button>
                     </StyledAction>
                   </Card>
-                </Block>
+                </Fade>
               </Cell>
             ))
           }

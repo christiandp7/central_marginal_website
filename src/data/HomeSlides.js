@@ -7,19 +7,19 @@ import SlideImg4 from '../assets/images/home-04.jpg'
 let HomeSlides = [
   {
     img: SlideImg1,
-    caption: 'Slide 1 caption' 
+    caption: 'Patrimonio del artista Claudio Sanchez' 
   },
   {
     img: SlideImg2,
-    caption: 'Slide 2 caption' 
+    caption: 'Colección privada (Nueva York, Puerto Rico o Kingston)' 
   },
   {
     img: SlideImg3,
-    caption: 'Slide 3 caption' 
+    caption: 'Fondo Colectivo Sincrético' 
   },
   {
     img: SlideImg4,
-    caption: 'Slide 4 caption' 
+    caption: 'Colección Colectivo Sincrético' 
   },
 ]
 

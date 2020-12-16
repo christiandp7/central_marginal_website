@@ -31,7 +31,6 @@ function Content() {
         </Route>
         <Redirect from="*" to="/404" />
       </Switch>
-      <Footer />
     </>
   )
 }

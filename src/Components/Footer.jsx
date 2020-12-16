@@ -11,7 +11,7 @@ function Footer({ position="static"}) {
       width="100%"
       paddingBottom="16px"
     >
-      <Paragraph3 $style={{textAlign:"center"}}>Copyright &copy; Central Marginal. Powered by Suspicious Package.</Paragraph3>
+      <Paragraph3 $style={{textAlign:"center"}}><small>Copyright &copy; Central Marginal. Powered by Suspicious Package.</small></Paragraph3>
     </Block>
   )
 }

@@ -4,4 +4,10 @@
   -ms-transition: all $duration ease;
   -o-transition: all $duration ease;
   transition: all $duration ease;
-} ;
+}
+
+@mixin media-max-width($breakpoint) {
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}
