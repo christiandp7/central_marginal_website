@@ -77,7 +77,7 @@ const Main2 = () => {
         <ContentWrapper sidebarDirection={changeSidebarDirection()}>
           <Content />
         </ContentWrapper>
-          {/*<Footer />*/}
+        {/*<Footer />*/}
           
       </Block>
     </>

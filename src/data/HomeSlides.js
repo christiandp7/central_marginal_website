@@ -2,6 +2,8 @@ import SlideImg1 from '../assets/images/home-01.jpg'
 import SlideImg2 from '../assets/images/home-02.jpg'
 import SlideImg3 from '../assets/images/home-03.jpg'
 import SlideImg4 from '../assets/images/home-04.jpg'
+import SlideImg5 from '../assets/images/home-05.jpg'
+import SlideImg6 from '../assets/images/home-06.jpg'
 
 
 let HomeSlides = [
@@ -20,6 +22,14 @@ let HomeSlides = [
   {
     img: SlideImg4,
     caption: 'Colección Colectivo Sincrético' 
+  },
+  {
+    img: SlideImg5,
+    caption: 'Slide 5' 
+  },
+  {
+    img: SlideImg6,
+    caption: 'Slide 6' 
   },
 ]
 

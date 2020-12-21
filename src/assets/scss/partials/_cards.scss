@@ -1,7 +1,7 @@
 .podcast_card {
-  //margin: 0 auto;
+  margin: 0 auto;
   max-width: 400px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   @include media-max-width($large-down) {
     max-width: 100%;
   }
