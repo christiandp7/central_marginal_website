@@ -11,7 +11,7 @@ function Sidebar() {
     <Block paddingTop="40px" maxHeight="100vh">
       <SideNav />
       <Switch>
-        <Route exact path={["/","/archivo"]}>
+        <Route exact path={["/"]}>
           <Block maxWidth="100%" padding="1em 12px 1em 12px" marginTop="20px">
             <Fade>
               <SideSlider />

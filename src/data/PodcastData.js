@@ -1,8 +1,8 @@
 
-import episodio1Img from '../assets/images/episodios/episodio1.jpg'
-import episodio2Img from '../assets/images/episodios/episodio2.jpg'
-import episodio3Img from '../assets/images/episodios/episodio3.jpg'
-import episodio4Img from '../assets/images/episodios/episodio4.jpg'
+import episodio1Img from '../assets/images/podcast/episodio1.jpg'
+import episodio2Img from '../assets/images/podcast/episodio2.jpg'
+import episodio3Img from '../assets/images/podcast/episodio3.jpg'
+import episodio4Img from '../assets/images/podcast/episodio4.jpg'
 
 const PodcastData = [
   {

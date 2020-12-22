@@ -1,9 +1,9 @@
-import SlideImg1 from '../assets/images/home-01.jpg'
-import SlideImg2 from '../assets/images/home-02.jpg'
-import SlideImg3 from '../assets/images/home-03.jpg'
-import SlideImg4 from '../assets/images/home-04.jpg'
-import SlideImg5 from '../assets/images/home-05.jpg'
-import SlideImg6 from '../assets/images/home-06.jpg'
+import SlideImg1 from '../assets/images/home/home-01.jpg'
+import SlideImg2 from '../assets/images/home/home-02.jpg'
+import SlideImg3 from '../assets/images/home/home-03.jpg'
+import SlideImg4 from '../assets/images/home/home-04.jpg'
+import SlideImg5 from '../assets/images/home/home-05.jpg'
+import SlideImg6 from '../assets/images/home/home-06.jpg'
 
 
 let HomeSlides = [

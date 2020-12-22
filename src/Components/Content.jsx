@@ -6,7 +6,7 @@ import Footer from '../Components/Footer'
 // Pages
 import Home from '../Pages/Home'
 import Podcast from '../Pages/Podcast2'
-import Archivo from '../Pages/Archivo'
+import Archivo from '../Pages/Archivo2'
 import Participantes from '../Pages/Participantes'
 
 function Content() {
