@@ -5,7 +5,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 import Footer from '../Components/Footer'
 // Pages
 import Home from '../Pages/Home'
-import Podcast from '../Pages/Podcast2'
+import Podcast from '../Pages/Podcast3'
 import Archivo from '../Pages/Archivo2'
 import Participantes from '../Pages/Participantes'
 
