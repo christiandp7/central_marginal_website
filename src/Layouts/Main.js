@@ -8,7 +8,6 @@ import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
 import Footer from '../Components/Footer'
 
-const sidebar_Width = "210px";
 
 const Main = () => {
   let location = useLocation();

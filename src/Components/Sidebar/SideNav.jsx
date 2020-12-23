@@ -10,7 +10,8 @@ const navItems = [
   { title: 'inicio', itemId: '/' },
   { title: 'podcast', itemId: '/podcast' },
   { title: 'archivo', itemId: '/archivo' },
-  { title: 'participantes', itemId: '/participantes' },
+  { title: 'agradecimientos', itemId: '/agradecimientos' },
+  //{ title: 'participantes', itemId: '/participantes' },
 ]
 
 const navStyles = (theme) => {

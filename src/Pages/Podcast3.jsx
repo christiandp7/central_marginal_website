@@ -53,8 +53,8 @@ function Podcast2() {
                     </StyledAction>
                   </Card>*/}
                   <Block
-                    marginBottom="25px"
-                    marginBottom="40px"
+                    marginBottom="30px"
+                    marginBottom="50px"
                   >
                     <Block
                       display="flex"
@@ -79,7 +79,7 @@ function Podcast2() {
                         </Card>
                       </Block>
                     </Block>
-                    <Display4 marginBottom="scale500">Episodio {i+1} - {episode.title}</Display4>
+                    {/*<Display4 marginBottom="scale500">Episodio {i+1} - {episode.title}</Display4>*/}
                   </Block>
 
                 </Fade>

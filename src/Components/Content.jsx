@@ -7,7 +7,8 @@ import Footer from '../Components/Footer'
 import Home from '../Pages/Home'
 import Podcast from '../Pages/Podcast3'
 import Archivo from '../Pages/Archivo2'
-import Participantes from '../Pages/Participantes'
+import Agradecimientos from '../Pages/Agradecimientos'
+//import Participantes from '../Pages/Participantes'
 
 function Content() {
   return (
@@ -22,9 +23,12 @@ function Content() {
         <Route exact path="/archivo">
           <Archivo />
         </Route>
-        <Route exact path="/participantes">
-          <Participantes />
+        <Route exact path="/agradecimientos">
+          <Agradecimientos />
         </Route>
+        {/*<Route exact path="/participantes">
+          <Participantes />
+        </Route>*/}
 
         <Route exact path="/404">
           <h1>404 - Not Found</h1>
