@@ -18,10 +18,46 @@ const halfCol = [16, 4, 6];
 const wholeCol = [16, 8, 12];
 
 const ArchivoImages = [
+
+  // first row
+  //--------
+  // second row
+  {
+    src: archivoImg2,
+    col: halfCol,
+  },
+  {
+    src: archivoImg5,
+    col: halfCol,
+  },
+  // third row
   {
     src: archivoImg7,
     col: wholeCol,
   },
+  // fourth row
+  {
+    src: archivoImg6,
+    col: halfCol,
+  },
+  {
+    src: archivoImg9,
+    col: halfCol,
+  },
+  // fifth row
+  {
+    src: archivoImg10,
+    col: wholeCol,
+  },
+  // sixth row
+  {
+    src: archivoImg3,
+    col: halfCol,
+  },
+
+
+
+
   {
     src: archivoImg8,
     col: halfCol,
@@ -34,26 +70,13 @@ const ArchivoImages = [
     src: homeImg4,
     col: wholeCol,
   },
-  {
-    src: archivoImg6,
-    col: halfCol,
-  },
-  {
-    src: archivoImg9,
-    col: halfCol,
-  },
-  {
-    src: archivoImg10,
-    col: wholeCol,
-  },
+  
+  
   {
     src: archivoImg11,
     col: halfCol,
   },
-  {
-    src: archivoImg3,
-    col: halfCol,
-  },
+  
   {
     src: homeImg1,
     col: halfCol,
@@ -66,14 +89,7 @@ const ArchivoImages = [
     src: archivoImg4,
     col: wholeCol,
   },
-  {
-    src: archivoImg2,
-    col: halfCol,
-  },
-  {
-    src: archivoImg5,
-    col: halfCol,
-  },
+  
   
 ];
 
