@@ -1,6 +1,7 @@
 import {Client as Styletron} from 'styletron-engine-atomic';
 import {Provider as StyletronProvider} from 'styletron-react';
 import { BaseProvider, createTheme} from 'baseui';
+import Scrollbar from 'react-custom-scrollbars'
 
 import { SliderProvider } from './Context/SliderContext'
 import { BrowserRouter as Router } from "react-router-dom"
@@ -25,9 +26,11 @@ function App() {
     <StyletronProvider value={engine}>
       <BaseProvider theme={theme}>
         <SliderProvider>
-          <Router>
-            <Main />
-          </Router>
+          <Scrollbar style={{ width: '100vw', height: '100vh' }}>
+            <Router>
+                <Main />
+            </Router>
+          </Scrollbar>
         </SliderProvider>
       </BaseProvider>
     </StyletronProvider>
