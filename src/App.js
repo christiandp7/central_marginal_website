@@ -26,7 +26,13 @@ function App() {
     <StyletronProvider value={engine}>
       <BaseProvider theme={theme}>
         <SliderProvider>
-          <Scrollbar style={{ width: '100vw', height: '100vh' }}>
+          <Scrollbar 
+            autoHide
+            autoHideTimeout={3000} 
+            autoHeightMin="100vh"
+            autoHide
+            style={{ width: '100vw', height: '100vh' }}
+          >
             <Router>
                 <Main />
             </Router>

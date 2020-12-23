@@ -60,7 +60,9 @@ function Podcast2() {
                       display="flex"
                     >
                       <Block flex={1}>
-                        <img src={episode.image} alt=""/>
+                        <a target="_blank" href={episode.link}>
+                          <img src={episode.image} alt=""/>
+                        </a>
                       </Block>
                       <Block
                         display="flex"

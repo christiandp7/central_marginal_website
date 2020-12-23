@@ -7,7 +7,7 @@ import { StyledLink } from "baseui/link"
 import {Grid, Cell} from 'baseui/layout-grid';
 import {Card, StyledThumbnail, StyledBody, StyledAction} from 'baseui/card';
 import {Button} from 'baseui/button';
-import { Paragraph1, H3 } from "baseui/typography"
+import { Paragraph1, H4 } from "baseui/typography"
 import Fade from 'react-reveal/Fade';
 
 // data
@@ -34,13 +34,13 @@ function Agradecimientos() {
               marginTop="10vh"
             >
               <Fade>
-                <H3 style={{lineHeight: 2.1, textAlign: 'justify', fontWeight: 200}}>
+                <H4 style={{lineHeight: 2.1, textAlign: 'justify', fontWeight: 200}}>
                 {
                   agradecimientosNames.map((name, i) => (
                       <span className="agradecimientos_name">{name} </span>
                   ))
                 }
-                </H3>
+                </H4>
               </Fade>
             </Block>
           </Cell>
