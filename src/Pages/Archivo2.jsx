@@ -9,6 +9,7 @@ import {Card, StyledBody, StyledAction} from 'baseui/card';
 import {Button} from 'baseui/button';
 import { Paragraph3 } from "baseui/typography"
 import Fade from 'react-reveal/Fade';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // data
 import archivoImages from '../data/ArchivoImages'
@@ -40,10 +41,11 @@ function Archivo2() {
                   marginBottom="25px"
                 >
                   <Fade>
-                    <img 
-                      style={{maxWidth: '100%'}} 
+                    <LazyLoadImage 
+                      //style={{maxWidth: '100%'}} 
                       src={image.src} 
                       alt={image.alt}
+                      effect="opacity"
                       //onLoad={}
                     />
                   </Fade>

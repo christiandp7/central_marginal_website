@@ -60,7 +60,7 @@ function Podcast2() {
                       display="flex"
                     >
                       <Block flex={1}>
-                        <a target="_blank" href={episode.link}>
+                        <a target="_blank" rel="noreferrer" href={episode.link}>
                           <img src={episode.image} alt=""/>
                         </a>
                       </Block>
