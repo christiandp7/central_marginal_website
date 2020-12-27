@@ -17,7 +17,7 @@ import archivoImages from '../data/ArchivoImages'
 function Archivo2() {
   return (
     <>
-      <Block paddingTop="25px" padding="0 15px">
+      <Block paddingTop="25px" paddingLeft="15px" paddingRight="15px">
         <Link to="/">
           <Fade top>
             <LogoHorizontal />

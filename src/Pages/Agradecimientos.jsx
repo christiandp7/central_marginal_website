@@ -17,7 +17,7 @@ function Agradecimientos() {
   const [css, theme] = useStyletron()
   return (
     <>
-      <Block paddingTop="25px" padding="0 15px">
+      <Block paddingTop="25px" paddingLeft="15px" paddingRight="15px">
         <Link to="/">
           <Fade top>
             <LogoHorizontal />
