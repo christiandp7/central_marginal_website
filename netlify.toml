@@ -14,12 +14,7 @@ status = 200
 to = "/index.html"
 
 [[redirects]]
-from = "/participantes"
-status = 200
-to = "/index.html"
-
-[[redirects]]
-from = "/guion"
+from = "/agradecimientos"
 status = 200
 to = "/index.html"
 
