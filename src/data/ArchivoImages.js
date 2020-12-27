@@ -19,6 +19,8 @@ import archivoImg17 from '../assets/images/archivo/archivo-17.jpg'
 import archivoImg18 from '../assets/images/archivo/archivo-18.jpg'
 import archivoImg19 from '../assets/images/archivo/archivo-19.jpg'
 import archivoImg20 from '../assets/images/archivo/archivo-20.jpg'
+import archivoImg21 from '../assets/images/archivo/archivo-21.jpg'
+import archivoImg22 from '../assets/images/archivo/archivo-22.jpg'
 // Home images
 import homeImg1 from '../assets/images/home/home-01.jpg'
 import homeImg4 from '../assets/images/home/home-04.jpg'
@@ -62,6 +64,10 @@ const ArchivoImages = [
     col: wholeCol,
   },
   // sixth row
+  {
+    src: archivoImg21,
+    col: halfCol,
+  },
   {
     src: archivoImg3,
     col: halfCol,
@@ -113,7 +119,13 @@ const ArchivoImages = [
   // fivetenth row
   {
     src: archivoImg20,
-    col: halfCol,
+    col: wholeCol,
+    justifyContent: "flex-start"
+  },
+  {
+    src: archivoImg22,
+    col: wholeCol,
+    justifyContent: "flex-end"
   },
 
   

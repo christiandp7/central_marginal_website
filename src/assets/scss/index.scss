@@ -13,6 +13,9 @@
 // Optional Theme Stylesheet
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
+// Lazy load effect library
+@import "react-lazy-load-image-component/src/effects/opacity.css";
+
 @import "partials/base";
 
 @import "partials/typography";

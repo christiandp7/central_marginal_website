@@ -34,7 +34,7 @@ function Archivo2() {
               <Cell span={image.col}>
                 <Block 
                   display="flex" 
-                  justifyContent="center" 
+                  justifyContent={image.justifyContent || "center"} 
                   alignItems="center" 
                   height="100%"
                   marginTop="25px"
@@ -46,6 +46,8 @@ function Archivo2() {
                       src={image.src} 
                       alt={image.alt}
                       effect="opacity"
+                      //useIntersectionObserver={true}
+                      threshold={20}
                       //onLoad={}
                     />
                   </Fade>
