@@ -41,7 +41,7 @@ function Home() {
         display="flex" 
         alignItems="center" 
         justifyContent="flex-end" 
-        paddingRight="20px"
+        paddingRight={["0","5px","10px","20px"]}
       >
         <Link to="/">
           <Fade right>
