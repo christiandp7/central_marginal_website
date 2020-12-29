@@ -12,7 +12,7 @@ import MobileNav from '../MobileNav/MobileNav'
 
 
 
-function Header() {
+function Header({ noLogo }) {
   const [navOpen, setNavOpen] = useState(false)
   return (
     <>
@@ -39,13 +39,18 @@ function Header() {
             <IconMenu size={24} />
           </Button>
           
-          <div className="logo_container_hz">
-            <Link to="/">
-              <Fade top>
-                <LogoHorizontal />
-              </Fade>
-            </Link>
-          </div>
+          {
+            !noLogo && (
+              <div className="logo_container_hz">
+                <Link to="/">
+                  <Fade top>
+                    <LogoHorizontal />
+                  </Fade>
+                </Link>
+              </div>
+            )
+          }
+          
 
         </Block>
       </Cell>

@@ -35,7 +35,7 @@ function HomeSliderSlick() {
   const figStyles = css({margin:'0', outline: '0', width: 'auto'});
   const figCapStyles = css({marginTop: '5px'});
   const imgStyles = css({width: '100%', maxWidth: '100%' });
-  const sliderStyles = {maxWidth: '100%', margin: "0 25px"}
+  const sliderStyles = {maxWidth: '100%'}
 
   return (
     <Slider {...settings} style={sliderStyles} ref={slider => setSlider1(slider)} asNavFor={slider2}>

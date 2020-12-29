@@ -14,8 +14,13 @@
 
 // Home Slider
 .homeSlider {
+  margin: 0 25px;
+
   @include media-min-width($large-up) {
     padding: 0 8px;
+  }
+  @include media-max-width($medium-down) {
+    margin: 0 18px;
   }
   & > button {
     @include media-max-width($large-down) {
@@ -24,7 +29,10 @@
   }
 }
 .homeSlider_container {
-  /*@include media-min-width($large-up) {
-    padding: 0 30px;
+  /*@include media-min-max-width($large-up, 800px) {
+    margin-top: 50px;
   }*/
+  @include media-min-max-width($medium-up, $large-down) {
+    max-width: 80% !important;
+  }
 }

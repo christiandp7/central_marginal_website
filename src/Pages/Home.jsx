@@ -1,13 +1,13 @@
 import React from 'react'
-import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
-import { LogoVertical } from '../Svg/Logo'
-
 import { Block } from 'baseui/block'
 //import { useStyletron } from 'baseui'
-
 import { NavLink as Link } from 'react-router-dom'
-
 import Fade from 'react-reveal/Fade';
+
+// components
+import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
+import { LogoVertical } from '../Svg/Logo'
+import Header from '../Components/Header/Header'
 
 
 function Home() {
@@ -22,7 +22,15 @@ function Home() {
       justifyContent="flex-end"
       flexWrap="wrap"*/
     >
-      <Block width="85%" display="flex" justifyContent="flex-end" alignItems="center">
+      <Block position="relative" width="85%" display="flex" justifyContent="flex-end" alignItems="center">
+        <Block 
+          position="absolute" 
+          display={["block","block","block", "none"]} 
+          top={["0","8px","18px","0"]}
+          left="0"
+        >
+          <Header noLogo />
+        </Block>
         <Block 
           width={['100%','100%', '100%', '75%']} 
           maxWidth="1280px"
