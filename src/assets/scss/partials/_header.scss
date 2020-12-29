@@ -1,0 +1,19 @@
+/*.menu_mobile__btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #f60;
+  @include media-min-width($large-up) {
+    display: none;
+  }
+}*/
+
+.logo_container_hz {
+  padding: 25px 15px;
+  @include media-max-width($large-down) {
+    padding: 20px 15px;
+  }
+  @include media-max-width($medium-down) {
+    padding: 5px 15px;
+    margin-top: 6px;
+  }
+}

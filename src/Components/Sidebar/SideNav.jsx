@@ -3,7 +3,7 @@ import { Navigation, StyledNavItem, } from "baseui/side-navigation";
 import { withRouter } from "react-router";
 import { useLocation, useHistory } from "react-router-dom"
 import { useStyletron } from "baseui"
-import { ChevronRight } from "../../Svg/Chevron"
+import { ChevronRight, ChevronLeft } from "../../Svg/Chevron"
 import { Block } from "baseui/block"
 
 const navItems = [
@@ -14,9 +14,9 @@ const navItems = [
   //{ title: 'participantes', itemId: '/participantes' },
 ]
 
-const navStyles = (theme) => {
+const navStyles = (theme, itemsAlign) => {
   return {
-    textAlign: 'right',
+    textAlign: itemsAlign,
     fontSize: theme.sizing.scale750,
     cursor: 'pointer',
     ':hover': {
@@ -25,16 +25,16 @@ const navStyles = (theme) => {
   }
 }
 
-const navActiveStyles = (theme) => {
+const navActiveStyles = (theme, itemsAlign) => {
   return {
     backgroundColor: "transparent",
     borderLeftColor: "transparent",
     //color: theme.colors.primary200,
-    ...navStyles(theme)
+    ...navStyles(theme, itemsAlign)
   }
 }
 
-function SideNav() {
+function SideNav({itemsAlign="right"}) {
   const [css, theme] = useStyletron();
   let location = useLocation();
   let history = useHistory();
@@ -49,41 +49,53 @@ function SideNav() {
         history.push(item.itemId);
       }}
       overrides={{
-        /*NavItem: {
-          style: ({$active, $theme}) => {
-            if($active){
-              return navActiveStyles($theme)
-            }
-            return navStyles($theme)
-          }
-        },*/
-      NavItem: {
-        component: ({children, $active}) => {
-          if($active) {
-            return (
-              <StyledNavItem 
-                style={navActiveStyles(theme)} 
-              >
-                <Block
-                  display="inline"
-                  position="relative"
-                  top="3px"
-                  right="4px"
+        NavItem: {
+          component: ({children, $active}) => {
+            if($active) {
+              return (
+                <StyledNavItem 
+                  style={navActiveStyles(theme, itemsAlign)} 
                 >
-                  <ChevronRight size={17} />
-                </Block>
-                {children}
-              </StyledNavItem>
-            )
-          }
-          return <StyledNavItem style={navStyles(theme)} >{children}</StyledNavItem>
-        },
-      }
-        
+                  {itemsAlign === "right" && 
+                    (<ChevronRightAlign />)
+                  }
+                    {children}
+                  {itemsAlign === "left" && 
+                    (<ChevronLeftAlign />)
+                  }
+                </StyledNavItem>
+              )
+            }
+            return <StyledNavItem style={navStyles(theme, itemsAlign)} >{children}</StyledNavItem>
+          },
+        }
       }}
     />
     </React.Fragment>
   )
 }
+
+const ChevronRightAlign = () => (
+  <Block
+    display="inline"
+    position="relative"
+    top="3px"
+    right="4px"
+  >
+    <ChevronRight size={17} />
+  </Block>
+)
+
+const ChevronLeftAlign = () => (
+  <Block
+    display="inline"
+    position="relative"
+    top="3px"
+    left="4px"
+  >
+    <ChevronLeft size={17} />
+  </Block>
+)
+
 
 export default SideNav

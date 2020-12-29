@@ -11,23 +11,19 @@ import { Paragraph3 } from "baseui/typography"
 import Fade from 'react-reveal/Fade';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
+// Components
+import Header from '../Components/Header/Header'
+import PageContainer from '../Components/PageContainer'
+
 // data
 import archivoImages from '../data/ArchivoImages'
 
 function Archivo2() {
   return (
     <>
-      <Block paddingTop="25px" paddingLeft="15px" paddingRight="15px">
-        <Link to="/">
-          <Fade top>
-            <LogoHorizontal />
-          </Fade>
-        </Link>
-      </Block>
-      <Block
-        marginTop={["20px", "25px", "35px"]}
-        marginBottom={["20px", "25px", "35px"]}
-      >
+      <Header />
+
+      <PageContainer>
         <Grid gridMargins={[16,36,0]}>
           {
             archivoImages.map((image, i) => (
@@ -56,7 +52,7 @@ function Archivo2() {
             ))
           }
         </Grid>
-      </Block>
+      </PageContainer>
     </>
   )
 }

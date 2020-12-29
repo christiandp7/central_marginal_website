@@ -10,6 +10,10 @@ import {Button} from 'baseui/button';
 import { Paragraph1, H4 } from "baseui/typography"
 import Fade from 'react-reveal/Fade';
 
+// Components
+import Header from '../Components/Header/Header'
+import PageContainer from '../Components/PageContainer'
+
 // data
 import agradecimientosNames from '../data/AgradecimientosNames'
 
@@ -17,17 +21,9 @@ function Agradecimientos() {
   const [css, theme] = useStyletron()
   return (
     <>
-      <Block paddingTop="25px" paddingLeft="15px" paddingRight="15px">
-        <Link to="/">
-          <Fade top>
-            <LogoHorizontal />
-          </Fade>
-        </Link>
-      </Block>
-      <Block
-        marginTop={["20px", "25px", "35px"]}
-        marginBottom={["20px", "25px", "35px"]}
-      >
+      <Header />
+
+      <PageContainer>
         <Grid gridMargins={[16,36,0]}>
           <Cell span={12}>
             <Block
@@ -45,7 +41,7 @@ function Agradecimientos() {
             </Block>
           </Cell>
         </Grid>
-      </Block>
+      </PageContainer>
     </>
   )
 }

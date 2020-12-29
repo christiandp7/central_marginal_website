@@ -9,49 +9,24 @@ import {Button} from 'baseui/button';
 import { Paragraph2, Display4 } from "baseui/typography"
 import Fade from 'react-reveal/Fade';
 
+// Components
+import Header from '../Components/Header/Header'
+import PageContainer from '../Components/PageContainer'
+
 // data
 import podcastData from '../data/PodcastData'
 
 function Podcast2() {
   return (
     <>
-      <Block paddingTop="25px" paddingLeft="15px" paddingRight="15px">
-        <Link to="/">
-          <Fade top>
-            <LogoHorizontal />
-          </Fade>
-        </Link>
-      </Block>
-      <Block
-        marginTop={["20px", "25px", "35px"]}
-        marginBottom={["20px", "25px", "35px"]}
-      >
+      <Header />
+
+      <PageContainer>
         <Grid gridMargins={[16,36,0]}>
           {
             podcastData.map((episode, i) => (
               <Cell span={[16, 8, 12]} >
                 <Fade>
-                  {/*<Card
-                    className="podcast_card-horizontal"
-                    overrides={{
-                      Root: {style: {border: 0, color: "blue" }},
-                      Body: {style: {fontWeight: '300'}}
-                    }}
-                    //headerImage={episode.image}
-                    //title={episode.title}
-                  >
-                    <StyledThumbnail
-                      src={episode.image}
-                    />
-                    <StyledBody>
-                      <Paragraph3 style={{fontWeight: 200}}>{episode.text}</Paragraph3>
-                    </StyledBody>
-                    <StyledAction>
-                      <Button $as="a" target="_blank" href={episode.link} overrides={{BaseButton: {style: {width: '100%'}}}}>
-                        Ir al podcast
-                      </Button>
-                    </StyledAction>
-                  </Card>*/}
                   <Block
                     marginBottom="30px"
                     marginBottom="50px"
@@ -65,7 +40,7 @@ function Podcast2() {
                         </a>
                       </Cell>
                       <Cell span={[4,5,8]}>
-                        <Block display="flex" alignItems="flex-end">
+                        <Block display="flex" alignItems="flex-end" height="100%">
                           <Card
                             overrides={{
                               Root: {style: {border: 0}},
@@ -87,7 +62,7 @@ function Podcast2() {
             ))
           }
         </Grid>
-      </Block>
+      </PageContainer>
     </>
   )
 }
