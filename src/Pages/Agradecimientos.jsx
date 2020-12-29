@@ -27,10 +27,10 @@ function Agradecimientos() {
         <Grid gridMargins={[16,36,0]}>
           <Cell span={12}>
             <Block
-              marginTop="10vh"
+              marginTop={["0","0","2vh","10vh"]}
             >
               <Fade>
-                <H4 style={{lineHeight: 2.1, textAlign: 'justify', fontWeight: 200}}>
+                <H4 className="agradecimientos_h4" style={{lineHeight: 2.1, textAlign: 'justify', fontWeight: 200}}>
                 {
                   agradecimientosNames.map((name, i) => (
                       <span className="agradecimientos_name">{name} </span>
