@@ -16,7 +16,8 @@ export const PrevArrow = ({ onClick }) => {
   return (
     <Button 
       onClick={onClick} 
-      //size={SIZE.compact} 
+      //size={SIZE.compact}
+      
       shape={SHAPE.circle}
       kind={KIND.tertiary}
       overrides={{

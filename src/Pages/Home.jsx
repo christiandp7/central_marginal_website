@@ -26,6 +26,7 @@ function Home() {
         <Block 
           width={['100%','100%', '100%', '75%']} 
           maxWidth="1280px"
+          className="homeSlider_container"
         >
             <Fade>
               <HomeSliderSlick />

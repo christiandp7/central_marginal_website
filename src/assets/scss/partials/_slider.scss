@@ -1,18 +1,3 @@
-.slick-slide {
-  figure {
-    img {
-      /*-webkit-filter: grayscale(1);
-      filter: grayscale(1);
-      //@include transition-ease(0.5s);
-
-      &:hover {
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
-      }*/
-    }
-  }
-}
-
 // SideSlider
 .sideSlider {
   .slick-slide {
@@ -25,4 +10,21 @@
   .slick-arrow.slick-prev {
     display: none !important;
   }
+}
+
+// Home Slider
+.homeSlider {
+  @include media-min-width($large-up) {
+    padding: 0 8px;
+  }
+  & > button {
+    @include media-max-width($large-down) {
+      display: none;
+    }
+  }
+}
+.homeSlider_container {
+  /*@include media-min-width($large-up) {
+    padding: 0 30px;
+  }*/
 }
