@@ -27,7 +27,7 @@ function Archivo2() {
         <Grid gridMargins={[16,36,0]}>
           {
             archivoImages.map((image, i) => (
-              <Cell span={image.col}>
+              <Cell span={image.col} key={i}>
                 <Block 
                   display="flex" 
                   justifyContent={image.justifyContent || "center"} 

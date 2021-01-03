@@ -30,7 +30,7 @@ function Podcast2() {
         <Grid gridMargins={[16,36,0]}>
           {
             podcastData.map((episode, i) => (
-              <Cell span={[16, 4, 6]} >
+              <Cell span={[16, 4, 6]} key={i}>
                 <Fade>
                   <Card
                     className="podcast_card"
