@@ -6,7 +6,7 @@ import Footer from '../Components/Footer'
 // Pages
 import Home from '../Pages/Home'
 import Podcast from '../Pages/Podcast3'
-import Archivo from '../Pages/Archivo2'
+import Archivo from '../Pages/Archivo3'
 import Agradecimientos from '../Pages/Agradecimientos'
 //import Participantes from '../Pages/Participantes'
 

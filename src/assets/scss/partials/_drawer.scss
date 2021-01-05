@@ -1,0 +1,7 @@
+.archivo_drawer_content {
+  @include media-max-width($medium-down) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
