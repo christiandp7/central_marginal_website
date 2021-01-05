@@ -4,4 +4,15 @@
     align-items: center;
     height: 100%;
   }
+  .archivo_drawer__text {
+    @include media-max-width($medium-down) {
+      margin-top: 20px;
+    }
+    h3 {
+      margin-bottom: 10px;
+      @include media-max-width($medium-down) {
+        margin-bottom: 6px;
+      }
+    }
+  }
 }
