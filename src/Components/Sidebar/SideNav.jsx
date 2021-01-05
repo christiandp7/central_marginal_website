@@ -17,7 +17,7 @@ const navItems = [
 const navStyles = (theme, itemsAlign) => {
   return {
     textAlign: itemsAlign,
-    fontSize: theme.sizing.scale750,
+    fontSize: theme.sizing.scale700,
     cursor: 'pointer',
     ':hover': {
       color: theme.colors.primary600,
