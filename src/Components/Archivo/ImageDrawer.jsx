@@ -31,8 +31,9 @@ function ImageDrawer({ isOpen, setIsOpen, image}) {
                 style={{maxHeight: "90vh"}}
                 src={image.srcBig}
                 alt={image.title}
-                effect="opacity"
-                placeholder={<h1>Loading...</h1>}
+                effect="blur"
+                //placeholder={<h1>Loading...</h1>}
+                placeholderSrc={image.src}
               />
             </Block>
             
@@ -49,7 +50,7 @@ function ImageDrawer({ isOpen, setIsOpen, image}) {
   )
 }
 
-const ImgLoader = () => (
+/*const ImgLoader = () => (
     <Spinner
         overrides={{
           ActivePath: {
@@ -57,7 +58,7 @@ const ImgLoader = () => (
           },
         }}
       />
-)
+)*/
 
 
 /*class ImgLoader extends React.Component {
