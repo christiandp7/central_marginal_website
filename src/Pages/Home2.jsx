@@ -3,6 +3,7 @@ import { Block } from 'baseui/block'
 //import { useStyletron } from 'baseui'
 import { NavLink as Link } from 'react-router-dom'
 import Fade from 'react-reveal/Fade';
+import Scrollbar from 'react-custom-scrollbars'
 
 // components
 import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
@@ -23,8 +24,13 @@ function Home2() {
       flexWrap="wrap"*/
     >
       <Block position="relative" width="85%" display="flex" justifyContent="flex-end" alignItems="center">
-        
-        
+        <Scrollbar 
+          autoHideTimeout={3000} 
+          //autoHeightMin="100vh"
+          autoHide
+          style={{ width: '100%', height: '100%' }}
+        >
+        </Scrollbar>       
       </Block>
       <Block 
         width="15%" 

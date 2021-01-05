@@ -31,7 +31,6 @@ function App() {
             autoHide
             autoHideTimeout={3000} 
             autoHeightMin="100vh"
-            autoHide
             style={{ width: '100vw', height: '100vh' }}
           >
             <Router>
