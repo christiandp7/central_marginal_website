@@ -4,7 +4,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 // Components
 import Footer from '../Components/Footer'
 // Pages
-import Home from '../Pages/Home'
+import Home from '../Pages/Home2'
 import Podcast from '../Pages/Podcast3'
 import Archivo from '../Pages/Archivo3'
 import Agradecimientos from '../Pages/Agradecimientos'
