@@ -29,7 +29,7 @@ function ImageDrawer({ isOpen, setIsOpen, image}) {
                 src={image.srcBig}
                 alt={image.alt}
                 effect="opacity"
-                placeholder={imgLoader()}
+                placeholder={ImgLoader()}
               />
             </Block>
             
@@ -43,8 +43,30 @@ function ImageDrawer({ isOpen, setIsOpen, image}) {
   )
 }
 
-const imgLoader = () => (
-  <Spinner />
+const ImgLoader = () => (
+  <Spinner
+        overrides={{
+          ActivePath: {
+            style: ({$theme}) => ({fill: $theme.colors.primaryA}),
+          },
+        }}
+      />
 )
+
+
+/*class ImgLoader extends React.Component {
+  render() {
+    return (
+      <Spinner
+        overrides={{
+          ActivePath: {
+            style: ({$theme}) => ({fill: $theme.colors.primaryA}),
+          },
+        }}
+      />
+    )
+  }
+}*/
+
 
 export default ImageDrawer
