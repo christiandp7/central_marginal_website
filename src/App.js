@@ -17,7 +17,8 @@ const engine = new Styletron();
 
 // Theme overrides
 const primitives = {
-  primaryFontFamily: 'Arvin',
+  //primaryFontFamily: 'Arvin',
+  primaryFontFamily: 'Roboto, sans-serif',
 };
 const theme = createTheme(primitives);
 
