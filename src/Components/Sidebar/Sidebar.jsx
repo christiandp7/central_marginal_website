@@ -1,10 +1,10 @@
 import React from 'react'
 import SideNav from './SideNav'
-import SideSlider from './SideSlider'
+//import SideSlider from './SideSlider'
 import { Block } from 'baseui/block'
-import { Switch, Route } from "react-router-dom"
+//import { Switch, Route } from "react-router-dom"
 
-import Fade from 'react-reveal/Fade'
+//import Fade from 'react-reveal/Fade'
 
 function Sidebar() {
   return (

@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route, Redirect } from 'react-router-dom'
 
 // Components
-import Footer from '../Components/Footer'
+//import Footer from '../Components/Footer'
 // Pages
 import Home from '../Pages/Home2'
 import Podcast from '../Pages/Podcast3'

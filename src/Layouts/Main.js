@@ -9,7 +9,7 @@ import Content from '../Components/Content'
 import Footer from '../Components/Footer'
 
 
-const Main = () => {
+/*const Main = () => {
   let location = useLocation();
 
   const changeSidebarOrder = () => {
@@ -41,7 +41,7 @@ const Main = () => {
       <Footer position="absolute" />
     </>
   )
-}
+}*/
 
 
 

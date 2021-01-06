@@ -1,12 +1,12 @@
 import React from 'react'
 import { Block } from 'baseui/block'
-import { Link } from 'react-router-dom'
-import { LogoHorizontal } from '../Svg/Logo'
-import { StyledLink } from "baseui/link"
+//import { Link } from 'react-router-dom'
+//import { LogoHorizontal } from '../Svg/Logo'
+//import { StyledLink } from "baseui/link"
 import {Grid, Cell} from 'baseui/layout-grid';
-import {Card, StyledThumbnail, StyledBody, StyledAction} from 'baseui/card';
-import {Button} from 'baseui/button';
-import { Paragraph2, Display4 } from "baseui/typography"
+import {Card, StyledBody} from 'baseui/card';
+//import {Button} from 'baseui/button';
+import { Paragraph2 } from "baseui/typography"
 import Fade from 'react-reveal/Fade';
 
 // Components
@@ -28,7 +28,7 @@ function Podcast2() {
               <Cell span={[16, 8, 12]} >
                 <Fade>
                   <Block
-                    marginBottom="30px"
+                    //marginBottom="30px"
                     marginBottom="50px"
                   >
                     <Grid

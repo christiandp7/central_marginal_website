@@ -1,13 +1,13 @@
 import React from 'react'
 import { useStyletron } from "baseui"
 import { Block } from 'baseui/block'
-import { Link } from 'react-router-dom'
-import { LogoHorizontal } from '../Svg/Logo'
-import { StyledLink } from "baseui/link"
+//import { Link } from 'react-router-dom'
+//import { LogoHorizontal } from '../Svg/Logo'
+//import { StyledLink } from "baseui/link"
 import {Grid, Cell} from 'baseui/layout-grid';
-import {Card, StyledThumbnail, StyledBody, StyledAction} from 'baseui/card';
-import {Button} from 'baseui/button';
-import { Paragraph1, H4 } from "baseui/typography"
+//import {Card, StyledThumbnail, StyledBody, StyledAction} from 'baseui/card';
+//import {Button} from 'baseui/button';
+import { H4 } from "baseui/typography"
 import Fade from 'react-reveal/Fade';
 
 // Components

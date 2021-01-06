@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { Block } from "baseui/block";
-import { Link } from "react-router-dom";
-import { LogoHorizontal } from "../Svg/Logo";
-import { Paragraph1 } from "baseui/typography";
-import { StyledLink } from "baseui/link";
-import { Grid, Cell } from "baseui/layout-grid";
-import { Card, StyledBody, StyledAction } from "baseui/card";
-import { Button } from "baseui/button";
-import { Paragraph3 } from "baseui/typography";
-import Fade from "react-reveal/Fade";
+//import { Block } from "baseui/block";
+//import { Link } from "react-router-dom";
+//import { LogoHorizontal } from "../Svg/Logo";
+//import { Paragraph1 } from "baseui/typography";
+//import { StyledLink } from "baseui/link";
+import { Grid } from "baseui/layout-grid";
+//import { Card, StyledBody, StyledAction } from "baseui/card";
+//import { Button } from "baseui/button";
+//import { Paragraph3 } from "baseui/typography";
+//import Fade from "react-reveal/Fade";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Masonry from "react-masonry-css"
 

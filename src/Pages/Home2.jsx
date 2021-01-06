@@ -8,9 +8,9 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Paragraph1 } from "baseui/typography"
 
 // components
-import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
+//import HomeSliderSlick from '../Components/Home/HomeSliderSlick'
 import { LogoVertical } from '../Svg/Logo'
-import Header from '../Components/Header/Header'
+//import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer'
 
 // assets
