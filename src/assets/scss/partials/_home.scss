@@ -1,7 +1,33 @@
 .home-banner__wrapper {
   width: 100%;
+  margin-top: 15px;
   margin-bottom: 15px;
   img {
     width: 100%;
   }
+}
+
+.home-text {
+  font-size: 32px !important;
+  line-height: 1.5 !important;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: justify;
+  @include media-max-width($large-down) {
+    font-size: 26px !important;
+  }
+  @include media-max-width($medium-down) {
+    font-size: 18px !important;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  span {
+    font-weight: 400;
+  }
+}
+
+.scrollbar-thumb__home {
+  display: none !important;
 }
