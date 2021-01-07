@@ -1,12 +1,12 @@
 import React from 'react'
-import {Grid, Cell} from 'baseui/layout-grid';
+//import {Grid, Cell} from 'baseui/layout-grid';
 import {Block} from 'baseui/block';
 
 import { useLocation } from "react-router-dom"
 
 import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
-import Footer from '../Components/Footer'
+//import Footer from '../Components/Footer'
 
 
 /*const Main = () => {
