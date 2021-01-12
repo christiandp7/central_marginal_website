@@ -83,13 +83,13 @@ const ArchivoImages = [
     srcBig: img_1800__1,
     title: "Figura 1",
     caption: "En la imagen, primero de derecha a izquierda, Claudio Sánchez en el viaje exploratorio de dos meses por el Caribe Centroamericano. Viaje en lancha en Laguna Angostura, Provincia de Cartago, Turrialba. De esta experiencia se registran algunas anotaciones de Claudio que posteriormente reaparecerían en los primeros documentos del Colectivo Sincrético sobre la Escuela Flotante. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__2,
     srcBig: img_1800__2,
     title: "Figura 2",
     caption: "En la imagen, primero de derecha a izquierda, Claudio Sánchez en el viaje exploratorio de dos meses por el Caribe Centroamericano. Viaje en lancha en Laguna Angostura, Provincia de Cartago, Turrialba. De esta experiencia se registran algunas anotaciones de Claudio que posteriormente reaparecerían en los primeros documentos del Colectivo Sincrético sobre la Escuela Flotante. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__3,
     srcBig: img_1800__3,
@@ -101,7 +101,7 @@ const ArchivoImages = [
     srcBig: img_1800__4,
     title: "Figura 4",
     caption: "Mar Caribe, Cayo Rendezvous, Belize, 1992. La idea del viaje permea gran parte de los escritos del artista Claudio Sánchez durante su recorrido por Centroamérica. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__5,
     srcBig: img_1800__5,
@@ -114,13 +114,13 @@ const ArchivoImages = [
     srcBig: img_1800__6,
     title: "Figura 6",
     caption: "Parte de los cuadernos de bocetos y libretas de apuntes de Claudio y Adela Sánchez, dos de los cuatro artistas integrantes del Colectivo Sincrético. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__7,
     srcBig: img_1800__7,
     title: "Figura 7",
     caption: "Cajas del archivo Colectivo Sincrético en julio de 2019 antes de ser estabilizadas y catalogadas por personal del Instituto de Investigaciones Estéticas de Martinica. Imagen cortesía de la Dra, Marianne Benoit Bastien."
-  },  
+  },
   {
     src: img_450__8,
     srcBig: img_1800__8,
@@ -132,26 +132,26 @@ const ArchivoImages = [
     srcBig: img_1800__9,
     title: "Figura 9",
     caption: "Adela Sánchez en brazos de su madre Celeste Gil. Puerto Plata, República Dominicana, 1976. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__10,
     srcBig: img_1800__10,
     title: "Figura 10",
     caption: "Adela Sánchez y su madre Celeste Gil. Puerto Plata, 1976. Colección Privada Puerto Rico ©2020."
   },
-  
+
   {
     src: img_450__11,
     srcBig: img_1800__11,
     title: "Figura 11",
     caption: "Retrato de la artista Adela Sánchez c. 1993. Cortesía de Flia. Sánchez Gil."
-  },  
+  },
   {
     src: img_450__12,
     srcBig: img_1800__12,
     title: "Figura 12",
     caption: "La artista Adela Sánchez (primera de derecha a izquierda) junto a sus amigas Belkis Martínez y Clarita Fermín en la apertura de una exposición colectiva de arte, Casa de Cultura, Puerto Plata, República Dominicana, c. 1993. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__13,
     srcBig: img_1800__13,
@@ -163,7 +163,7 @@ const ArchivoImages = [
     srcBig: img_1800__14,
     title: "Figura 14",
     caption: "Estudios para una instalación por Adela Sánchez y algunos de sus materiales de trabajo. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__15,
     srcBig: img_1800__15,
@@ -176,13 +176,13 @@ const ArchivoImages = [
     srcBig: img_1800__16,
     title: "Figura 16",
     caption: "Tres retratos del artista Claudio Sánchez, del Colectivo Sincrético. De arriba abajo, años 1991, 1989 y c.1994 respectivamente. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__17,
     srcBig: img_1800__17,
     title: "Figura 17",
     caption: "El artista Claudio Sánchez en mayo 1994, visitando la Quinta Bienal de La Habana, Cuba. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__18,
     srcBig: img_1800__18,
@@ -194,7 +194,7 @@ const ArchivoImages = [
     srcBig: img_1800__19,
     title: "Figura 19",
     caption: "Retrato escolar del segundo de primaria de la artista Eleonor Benzant (Fila frontal, segundo lugar de derecha a izquierda) en el patio de la Escuela Gregorio Luperón, Puerto Plata (República Dominicana) c. 1978. El mismo año fue fundada la Escuela de Bellas Artes de Puerto Plata por el artista Carlos de Mena Ortea en donde posteriormente Benzant cursaría el nivel preparatorio. Colección Privada Haití ©2019."
-  },  
+  },
   {
     src: img_450__20,
     srcBig: img_1800__20,
@@ -205,26 +205,26 @@ const ArchivoImages = [
     src: img_450__21,
     srcBig: img_1800__21,
     title: "Figura 21",
-    caption: "Eleonor Benzant (primera izquierda fila posterior) junto a su hermano Jonassaint y Marie Roseline Benzant respectivamente, junto a dos personas sin identificar en la casa familiar de municipio Luperón, Puerto Plata, c.1989. Imagen cortesía de Suspicious Package ©2020."
-  },  
+    caption: "Eleonor Benzant (primera izquierda fila posterior) junto a sus primos Jonassaint y Marie Roseline Benzant respectivamente, junto a dos personas sin identificar en la casa familiar de municipio Luperón, Puerto Plata, c.1989. Imagen cortesía de Suspicious Package ©2020."
+  },
   {
     src: img_450__22,
     srcBig: img_1800__22,
     title: "Figura 22",
     caption: "Registro de acción performática Adela Sánchez. Fotografía de Eleonor Benzant. Samaná, República Dominicana, 1994. Colección Privada Haití ©2019."
-  },  
+  },
   {
     src: img_450__23,
     srcBig: img_1800__23,
     title: "Figura 23",
-    caption: "Eleonor Benzant. Sin Título 1/3, 1994. Fotorafía. Impresión en gelatina de plata. 20 x 24 pulgadas. Colección Privada Haití ©2019."
+    caption: "Eleonor Benzant. Sin Título 1/3, 1994. Fotografía. Impresión en gelatina de plata. 20 x 24 pulgadas. Colección Privada Haití ©2019."
   },
   {
     src: img_450__24,
     srcBig: img_1800__24,
     title: "Figura 24",
     caption: "Eleonor Benzant. Sin Título, 1994. Fotografía. Impresión en pigmento de archivo. 15 x 18.75 pulgadas. Colección Privada Haití ©2019."
-  },  
+  },
   {
     src: img_450__25,
     srcBig: img_1800__25,
@@ -237,13 +237,13 @@ const ArchivoImages = [
     srcBig: img_1800__26,
     title: "Figura 26",
     caption: "Leandro Cid, Frontera, 1995. Cuadro de video 2. 12:07 minutos. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__27,
     srcBig: img_1800__27,
     title: "Figura 27",
     caption: "Registro fotográfico del viaje al Valle de Constanza, Cordillera Central, República Dominicana, Colectivo Sincrético c. 1993. Colección Privada Puerto Rico ©2020."
-  },  
+  },
   {
     src: img_450__28,
     srcBig: img_1800__28,
@@ -255,7 +255,7 @@ const ArchivoImages = [
     srcBig: img_1800__29,
     title: "Figura 29",
     caption: "La artista Eleonor Benzant en Luperón, Puerto Plata. Primavera de 1995. Imagen cortesía de Marie Roseline Benzant."
-  },  
+  },
   {
     src: img_450__30,
     srcBig: img_1800__30,
@@ -266,14 +266,14 @@ const ArchivoImages = [
     src: img_450__31,
     srcBig: img_1800__31,
     title: "Figura 31",
-    caption: "Imagen encontrada en cuadernos de apuntes de Claudio Sánchez. Muestra un taller de escultura. Forma parte del registro de la visita a la Escuela Nacional de Bellas Artes de Santo Domingo en marzo de 1994. Colección Privada Puerto Rico ©2020."
-  },  
+    caption: "Imagen encontrada en cuadernos de apuntes de Leandro Cid. Muestra un taller de escultura. Forma parte del registro de la visita a la Escuela Nacional de Bellas Artes de Santo Domingo en marzo de 1994. Colección Privada Puerto Rico ©2020."
+  },
   {
     src: img_450__32,
     srcBig: img_1800__32,
     title: "Figura 32",
     caption: "Las artistas Adela Sánchez, Eleonor Benzant y Leandro Cid (Primeros de izquierda a derecha) junto a sus amigos en Bonao, provincia Monseñor Nouel, República Dominicana, c. 1994. Entre los años 1992 y 1995 los miembros del Colectivo Sincrético realizaron múltiples viajes de exploración por toda la geografía de la isla en un intento por contrastar las posturas teóricas sobre pedagogía del arte de la Escuela Flotante con la realidad social del contexto local. Imagen cortesía de Suspicious Package ©2020."
-  },  
+  },
   {
     src: img_450__33,
     srcBig: img_1800__33,
@@ -285,7 +285,7 @@ const ArchivoImages = [
     srcBig: img_1800__34,
     title: "Figura 34",
     caption: "Vista parcial del patio de la Flia. Sánchez Gil, otro de los lugares de encuentro preferidos por el Colectivo Sincrético entre los años 1991 y 1996. Imagen cortesía de Suspicious Package ©2020."
-  },  
+  },
 ];
 
 export default ArchivoImages;
