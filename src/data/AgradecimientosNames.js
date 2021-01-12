@@ -27,7 +27,7 @@ const Names = [
   "Sharelly Emanuelson (Curazao)",
   "Thaina Corvington (Haití)",
   "Theowaldo Perna (Venezuela)",
-  "Yina Jiménez",
+  "Yina Jiménez Suriel",
 ]
 
 export default Names

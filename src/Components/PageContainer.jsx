@@ -6,6 +6,7 @@ function PageContainer({ children }) {
     <Block
       marginTop={["10px", "25px", "35px"]}
       marginBottom={["15px", "25px", "35px"]}
+      minHeight="60vh"
     >
       {children}
     </Block>
