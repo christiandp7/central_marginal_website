@@ -62,8 +62,8 @@ function Home2() {
       </Block>
 
       <Block
-        paddingLeft="20px"
-        paddingRight="5px"
+        paddingLeft="5px"
+        paddingRight="20px"
       >
         <Link to="/">
           <Fade right>
