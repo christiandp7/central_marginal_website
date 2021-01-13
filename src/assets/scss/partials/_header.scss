@@ -16,4 +16,9 @@
     padding: 5px 15px;
     margin-top: 6px;
   }
+  &.onlyMobile {
+    @include media-min-width($medium-up) {
+      display: none;
+    }
+  }
 }
