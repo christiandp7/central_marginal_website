@@ -30,7 +30,14 @@ function Home2() {
     justifyContent="flex-end"
     flexWrap="wrap"*/
     >
-      <Block padding="0 15px" width="85%" display="flex" justifyContent="flex-end" alignItems="center">
+      <Block
+        padding="0 15px"
+        //width="85%" 
+        width="100%"
+        display="flex"
+        justifyContent="flex-end"
+        alignItems="center"
+      >
         <Scrollbar
           autoHide
           renderThumbVertical={({ style, ...props }) =>
@@ -53,7 +60,20 @@ function Home2() {
 
         </Scrollbar>
       </Block>
+
       <Block
+        paddingLeft="20px"
+        paddingRight="5px"
+      >
+        <Link to="/">
+          <Fade right>
+            <LogoVertical />
+          </Fade>
+        </Link>
+      </Block>
+
+
+      {/*<Block
         width="15%"
         overflow="hidden"
         maxHeight="100vh"
@@ -67,7 +87,7 @@ function Home2() {
             <LogoVertical />
           </Fade>
         </Link>
-      </Block>
+      </Block>*/}
 
 
       {/*<Footer />*/}
