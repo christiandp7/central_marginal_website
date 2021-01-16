@@ -36,9 +36,15 @@ function Podcast2() {
                       gridMargins={0}
                     >
                       <Cell span={[4, 3, 4]}>
-                        <a target="_blank" rel="noreferrer" href={episode.link}>
-                          <img src={episode.image} alt="" />
-                        </a>
+                        {episode.podcast !== null ?
+                          episode.podcast :
+                          (
+                            <a target="_blank" rel="noreferrer" href={episode.link}>
+                              <img src={episode.image} alt="" />
+                            </a>
+                          )
+                        }
+
                       </Cell>
                       <Cell span={[4, 5, 8]}>
                         <Block display="flex" alignItems="flex-end" height="100%">
