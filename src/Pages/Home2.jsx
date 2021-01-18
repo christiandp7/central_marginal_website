@@ -26,7 +26,7 @@ function Home2() {
       <Header onlyMobile />
       <Block
         display="flex"
-        height="100vh"
+        height={["auto", "auto", "100vh", "100hv"]}
       >
         <Block
           padding="0 15px"
@@ -38,6 +38,9 @@ function Home2() {
         >
           <Scrollbar
             autoHide
+            autoHeight
+            autoHeightMin="100%"
+            autoHeightMax="100%"
             renderThumbVertical={({ style, ...props }) =>
               <div {...props} style={{ ...style, display: "none" }} />
             }
