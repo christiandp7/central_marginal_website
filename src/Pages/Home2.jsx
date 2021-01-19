@@ -26,7 +26,7 @@ function Home2() {
       <Header onlyMobile />
       <Block
         display="flex"
-        height={["auto", "auto", "100vh", "100hv"]}
+        height={["auto", "auto", "auto", "100hv"]}
       >
         <Block
           padding="0 15px"
