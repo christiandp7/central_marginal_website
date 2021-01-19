@@ -30,7 +30,6 @@ function Home2() {
       >
         <Block
           padding="0 15px"
-          //width="85%" 
           width="100%"
         /*display="flex"
         justifyContent="flex-end"
