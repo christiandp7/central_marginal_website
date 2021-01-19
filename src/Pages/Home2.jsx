@@ -67,7 +67,7 @@ function Home2() {
           paddingRight="20px"
           maxWidth="15%"
           //position="fixed"
-          display={["none", "none", "block"]}
+          display={["none", "none", "none", "block"]}
         >
           <Link to="/">
             <Fade right>
