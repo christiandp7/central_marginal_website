@@ -3,6 +3,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 
 // Components
 //import Footer from '../Components/Footer'
+import SpotifyButton from './Social/SpotifyButton';
 // Pages
 import Home from '../Pages/Home2'
 import Podcast from '../Pages/Podcast3'
@@ -35,6 +36,9 @@ function Content() {
         </Route>
         <Redirect from="*" to="/404" />
       </Switch>
+
+      <SpotifyButton />
+
     </>
   )
 }

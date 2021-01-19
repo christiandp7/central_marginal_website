@@ -1,6 +1,6 @@
 import React from 'react'
 //import {Grid, Cell} from 'baseui/layout-grid';
-import {Block} from 'baseui/block';
+import { Block } from 'baseui/block';
 
 import { useLocation } from "react-router-dom"
 
@@ -51,13 +51,13 @@ const Main2 = () => {
   const changeSidebarDirection = () => {
     let currentPage = location.pathname;
     //console.log(currentPage)
-    if(currentPage === "/"){
+    if (currentPage === "/") {
       return null
     } else {
       return "sidebar-to-right"
     }
   }
-  
+
   return (
     <>
       <Block
@@ -66,9 +66,9 @@ const Main2 = () => {
         //gridGutters={0}
         gridMargins={0}
         gridMaxWidth="none"
-        //width="100%"
+      //width="100%"
       >
-        
+
         <SidebarWrapper sidebarDirection={changeSidebarDirection()}>
           <Sidebar />
         </SidebarWrapper>
@@ -77,14 +77,14 @@ const Main2 = () => {
           <Content />
         </ContentWrapper>
         {/*<Footer />*/}
-          
+
       </Block>
     </>
   )
 }
 
 
-const SidebarWrapper = ({ children,  sidebarDirection}) => (
+const SidebarWrapper = ({ children, sidebarDirection }) => (
   <Block className={"sidebarWrapper " + sidebarDirection} >
     {children}
   </Block>
