@@ -35,7 +35,7 @@ function Podcast2() {
                     <Grid
                       gridMargins={0}
                     >
-                      <Cell span={[4, 3, 4]}>
+                      <Cell span={[4, 4, 4]}>
                         {episode.podcast !== null ?
                           episode.podcast :
                           (
@@ -46,7 +46,7 @@ function Podcast2() {
                         }
 
                       </Cell>
-                      <Cell span={[4, 5, 8]}>
+                      <Cell span={[4, 4, 8]}>
                         <Block display="flex" alignItems="flex-end" height="100%">
                           <Card
                             overrides={{
