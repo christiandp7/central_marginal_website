@@ -13,9 +13,13 @@ const SpotifyButton = () => {
       target="_blank"
       $style={({ $theme }) => ({
         position: 'fixed',
-        right: '4.5vw',
-        bottom: '4vh',
+        right: '15px',
+        bottom: '30px',
         boxShadow: $theme.lighting.shadow700,
+        [$theme.mediaQuery.large]: {
+          right: 'auto',
+          left: '35px',
+        }
       })}
     >
       <SpotifyIcon size={18} />

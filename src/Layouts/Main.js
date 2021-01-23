@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom"
 
 import Sidebar from '../Components/Sidebar/Sidebar'
 import Content from '../Components/Content'
+import SpotifyButton from '../Components/Social/SpotifyButton';
 //import Footer from '../Components/Footer'
 
 
@@ -77,6 +78,8 @@ const Main2 = () => {
           <Content />
         </ContentWrapper>
         {/*<Footer />*/}
+
+        <SpotifyButton />
 
       </Block>
     </>
