@@ -31,7 +31,7 @@ const PodcastData = [
     link: podcastURL
   }, {
     image: episodio4Img,
-    podcast: null,
+    podcast: <iframe src="https://open.spotify.com/embed-podcast/episode/5p8Y6xoP61EiujviKiF6kE" width="100%" height={podcast_height} title="episodio 4" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>,
     title: 'Placeholder 4',
     text: 'Central Marginal invita a pensar siguiendo la metodología creativa del archivo Sincrético. A través de un collage sonoro que recopila distintas voces rompemos las líneas del tiempo y las distancias de mar entre las islas. Una experiencia lúdico-colectiva que imagina el futuro que queremos para el arte desde nuestro presente convulso. El arte es el lugar de la posibilidad.',
     link: podcastURL
